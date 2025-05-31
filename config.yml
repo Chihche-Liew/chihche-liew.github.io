@@ -55,7 +55,7 @@ params:
     profileMode:
           enabled: true
           title: Zhizhe Liu
-          subtitle: "Hi, I am a graduate student at Computer Sciences, UW-Madison, and a researcher with a strong focus on empirical archival accounting. I leverage deep learning, natural language processing, and high-performance computing to study issues such as emerging risks' exposure, potential information in disclosure, and return/fundamental performance predictability. My research is driven by a desire to understand the economic consequences of disclosure and regulatory reporting in modern capital markets, and how new technology can make changes to the format, content and information of disclosure. There're also some pipelines and scripts which may be useful to financial archival researchers in the 'Research Toolkits' part. Hope they will help!"
+          subtitle: "Hi, I am a graduate student at Computer Sciences, UW-Madison, and a researcher with a strong focus on archival financial accounting. I leverage deep learning, natural language processing, and high-performance computing to study issues such as emerging risks' exposure, potential information in disclosure, and return/fundamental performance predictability. My research is driven by a desire to understand the economic consequences of disclosure and regulatory reporting in modern capital markets, and how new technology can make changes to the format, content and information of disclosure.  There're also some pipelines and scripts which may be useful to archival financial researchers in the 'Research Toolkits' part. Hope they will help!"
 #          imageUrl: "picture.jpeg"
 #          imageWidth: 160
 #          imageHeight: 160
