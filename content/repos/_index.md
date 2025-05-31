@@ -83,7 +83,7 @@ layout: page
 **Summary**: A Python script to:
 
 - Fetch SEC filings metadata from the SEC EDGAR database using the sec-api library.
-- Extract specific sections (e.g. "Item 1", "Item 1A") from individual filings, with built-in retry logic and multi-threading to handle network instability.
+- Extract specific sections (e.g. "Item 1", "Item 1A") from individual filings, with built-in retry logic and multi-threading to handle network instability. [repository here](https://github.com/Chihche-Liew/sec-filing-fetcher)
 
 **Features**:
 
