@@ -55,7 +55,7 @@ params:
     profileMode:
           enabled: true
           title: Zhizhe Liu
-          subtitle: "Hi, I am a graduate student at UW-Madison, School of Computer, Data & Information Sciences and a researcher with a strong focus on empirical archival accounting, capital markets, and financial disclosure. I leverage deep learning, natural language processing, and high-performance computing to study issues such as supply chain risk, disclosure obfuscation, and return predictability. My research is driven by a desire to understand the economic consequences of information design and regulatory reporting in modern markets."
+          subtitle: "Hi, I am a graduate student at UW-Madison, School of Computer, Data & Information Sciences and a researcher with a strong focus on empirical archival accounting, capital markets, and financial disclosure. I leverage deep learning, natural language processing, and high-performance computing to study issues such as supply chain risk, disclosure obfuscation, and return predictability. My research is driven by a desire to understand the economic consequences of disclosure and regulatory reporting in modern markets, and how new technology can make changes to the format, content and information of disclosure."
 #          imageUrl: "picture.jpeg"
 #          imageWidth: 160
 #          imageHeight: 160
