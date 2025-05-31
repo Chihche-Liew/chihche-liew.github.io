@@ -78,6 +78,21 @@ layout: page
 
 ---
 
+### 7. SEC Filing Fetcher
+
+**Summary**: A Python script to:
+
+- Fetch SEC filings metadata from the SEC EDGAR database using the sec-api library.
+- Extract specific sections (e.g. "Item 1", "Item 1A") from individual filings, with built-in retry logic and multi-threading to handle network instability.
+
+**Features**:
+
+- Easily query SEC filings (e.g., 10-K, 10-Q, 8-K) based on form type, year, and month, and get results as a structured pandas DataFrame.
+- Fetches specific sections from filings with multi-threaded processing and built-in retry logic to handle API errors.
+- Integrates extracted data back into DataFrames with `.apply()` or `.progress_apply()` support for easy analysis.
+
+---
+
 ## R
 
 ### 1. Replication and Extension of García et al. (2023, JFE)
