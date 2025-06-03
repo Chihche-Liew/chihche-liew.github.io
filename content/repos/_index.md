@@ -41,7 +41,7 @@ layout: page
 
 ### 4. RavenPack News Processor
 
-**Summary**: A Python pipeline designed for processing RavenPack news event data and extract events with focused keywords retrieved from WRDS with acceleration using Polars and DuckDB.
+**Summary**: A Python pipeline designed for processing RavenPack news event data and extract events with focused keywords retrieved from WRDS with acceleration using Polars and DuckDB. [repository here](https://github.com/Chihche-Liew/RavenPack-News-Processor)
 
 **Features**:
 
@@ -64,7 +64,7 @@ layout: page
 
 ### 6. Replication and Extension of Donelson et al. (2011, TAR)
 
-**Summary**: This project replicates and extends the empirical results of Donelson et al. (2011) using Compustat data from WRDS. The replication not only validates the original study (1967-2005) but also extends the analysis to more recent periods (up to 2023) to test the robustness of the findings.
+**Summary**: This project replicates and extends the empirical results of Donelson et al. (2011) using Compustat data from WRDS. The replication not only validates the original study (1967-2005) but also extends the analysis to more recent periods (up to 2023) to test the robustness of the findings. [repository here](https://github.com/Chihche-Liew/Changes-over-Time-Replication-and-Extension)
 
 **Features**:
 
