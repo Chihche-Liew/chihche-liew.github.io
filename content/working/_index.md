@@ -21,12 +21,18 @@ layout: page
   white-space: nowrap;
   margin-left: 1em;
 }
+.exp-points {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #555;
+}
 </style>
 <div class="exp-entry">
   <div>
     <div class="exp-role">Research Assistant</div>
     <div class="exp-org">University of Wisconsin-Madison, Wisconsin School of Business</div>
     <div>Supervised by Andrea Tillet</div>
+    <div class="exp-points">EDGAR Server Logs, Approximate Randomization (Matlab), Event Study, Trading Activity Analysis, Earnings Models, Revenue Persistence, Analyst Forecasts Usefulness</div>
   </div>
   <div class="exp-date">07-2024 – Present</div>
 </div>
@@ -36,6 +42,7 @@ layout: page
     <div class="exp-role">Research Assistant</div>
     <div class="exp-org">Cornell University, Johnson Graduate School of Management</div>
     <div>Supervised by Yao Lu</div>
+    <div class="exp-points">Banking Regulatory Analysis, Syndicated Loan Contract Textual Analysis, Risk Transmission via Loan Network, Spatial Data Analysis, Patent Data Analysis</div>
   </div>
   <div class="exp-date">12-2023 – Present</div>
 </div>
@@ -45,31 +52,35 @@ layout: page
     <div class="exp-role">Research Assistant</div>
     <div class="exp-org">Boston College, Carroll School of Management</div>
     <div>Supervised by Miao Liu and Yang Cao</div>
+    <div class="exp-points">Deep Learning and Machine Learning in Accounting, Finetuning LLMs, Text-Image Inference with Multi-GPUs, Textual Analysis of SEC Filings, Event Driven High-frequency Trading</div>  
   </div>
-  <div class="exp-date">12-2023 – Present</div>
+  <div class="exp-date">02-2023 – Present</div>
 </div>
+
 <div class="exp-entry">
   <div>
     <div class="exp-role">Research Assistant</div>
     <div class="exp-org">Wuhan University, Economics and Management School</div>
     <div>Supervised by Baojun Gao</div>
+    <div class="exp-points">NLP for Online Platforms, Sentiment Analysis, Large-scale Data Processing with Spark</div>
   </div>
   <div class="exp-date">03-2024 – 06-2024</div>
 </div>
-
 
 <div class="exp-entry">
   <div>
     <div class="exp-role">Quantitative Strategy Developer</div>
     <div class="exp-org">Trovequant (Beijing) Tech. Ltd.</div>
+    <div class="exp-points">Crude Oil Futures Index Tracking Strategy, Market Sentimental Strategy, Withdraw Controlling</div>
   </div>
   <div class="exp-date">06-2022 – 03-2023</div>
 </div>
 
-<div class="exp-entry">
+<div class="exp-entry"> 
   <div>
     <div class="exp-role">Investment Research Assistant</div>
     <div class="exp-org">CICC Wealth Management</div>
+    <div class="exp-points">Fundamental Analysis, Industrial Analysis with Specification on Power Industry, Basic Trading Strategy</div>
   </div>
   <div class="exp-date">07-2021 – 08-2021</div>
 </div>

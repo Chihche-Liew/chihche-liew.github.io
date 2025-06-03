@@ -28,36 +28,7 @@ layout: page
 
 ---
 
-### 3. EDGAR Server Log Data Processor
-
-**Summary**: A Python utility to download, preprocess, and merge U.S. SEC EDGAR server logs and master index files. Designed for tracking access activity to filings, including support for IP-based filtering. [repository here](https://github.com/Chihche-Liew/EDGAR-Server-Log-Data-Processor) 
-
-**Features**:
-
-- Downloads daily EDGAR server logs and quarterly master index files  
-- Filters logs to remove bots, index page hits, bad responses, and malformed entries  
-- Optional filtering by IP segments
-- Aggregates request counts by file type: `htm`, `txt`, `xbrl`, `other`  
-- Merges logs with filing metadata: CIK, form type, filing date
-
----
-
-### 4. Trading Activity Analyzer
-
-**Summary**: A WRDS-based Python class to extract, test, and visualize trading volume around firm-specific event dates. This tool supports abnormal activity diagnostics before launching full event studies, and can identify non-normal volume patterns. [repository here](https://github.com/Chihche-Liew/Trading-Activity-Analyzer)
-
-**Features**:
-
-- Adjustable event window (e.g., -5 to +5 days)
-- Supports three normality tests:  
-  - Jarque-Bera  
-  - Shapiro-Wilk  
-  - Anderson-Darling  
-- Generates aligned volume bar plots with event day highlighted
-
----
-
-### 5. Image-Text Inference with LLaVA
+### 3. Image-Text Inference with LLaVA
 **Summary**: Multimodal inference tool using LLaVA v1.5 for interpreting image + prompt input. [repository here](https://github.com/Chihche-Liew/Image-Text-Inference-LLaVA)  
 
 **Features**:
@@ -68,7 +39,20 @@ layout: page
 
 ---
 
-### 6. FF Industry Parser
+### 4. RavenPack News Processor
+
+**Summary**: A Python pipeline designed for processing RavenPack news event data and extract events with focused keywords retrieved from WRDS with acceleration using Polars and DuckDB.
+
+**Features**:
+
+- Supports both unigram and bigram keyword filtering
+- Replaces pandas operations with polars and duckdb for better performance
+- Outputs to `.parquet` files with compression for easy downstream processing
+
+---
+
+### 5. FF Industry Parser
+
 **Summary**: A lightweight parser for mapping SIC codes to Fama-French industry categories from structured `.txt` definitions. [repository here](https://github.com/Chihche-Liew/FF-Industry-Parser)  
 
 **Features**:
@@ -78,18 +62,14 @@ layout: page
 
 ---
 
-### 7. SEC Filing Fetcher
+### 6. Replication and Extension of Donelson et al. (2011, TAR)
 
-**Summary**: A Python script to:
-
-- Fetch SEC filings metadata from the SEC EDGAR database using the sec-api library.
-- Extract specific sections (e.g. "Item 1", "Item 1A") from individual filings, with built-in retry logic and multi-threading to handle network instability. [repository here](https://github.com/Chihche-Liew/sec-filing-fetcher)
+**Summary**: This project replicates and extends the empirical results of Donelson et al. (2011) using Compustat data from WRDS. The replication not only validates the original study (1967-2005) but also extends the analysis to more recent periods (up to 2023) to test the robustness of the findings.
 
 **Features**:
 
-- Easily query SEC filings (e.g., 10-K, 10-Q, 8-K) based on form type, year, and month, and get results as a structured pandas DataFrame.
-- Fetches specific sections from filings with multi-threaded processing and built-in retry logic to handle API errors.
-- Integrates extracted data back into DataFrames with `.apply()` or `.progress_apply()` support for easy analysis.
+- Calculation of key financial ratios (e.g., revenue, expense, earnings per asset) and rolling averages/volatility metrics.
+- Fully replicates Donelson et al.’s original Table 1 and Table 2 (1967-2005) and extends the analysis to 2006-2023 and other split years (e.g., 1995, 2012-2023) to assess robustness.
 
 ---
 
