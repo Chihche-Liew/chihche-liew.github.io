@@ -1,20 +1,34 @@
 ---
-title: "When Charts Deceive: Misleading Visuals in Corporate Presentations" 
-date: 2025-08-01
-author: ["Yang Cao", "Miao Liu", "Zhizhe Liu"]
-summary: "This paper analyzes 432k earnings-call slides with transformer vision models to detect five bias-prone chart features, showing they are widespread, systematically used, and linked to short-term return misperceptions that later reverse."
+title: "Controllable Traffic Simulation through LLM-Guided Hierarchical Chain-of-Thought Reasoning" 
+date: 2024-09-23
+author: ["Zhiyuan Liu", "Leheng Li", "Yuning Wang", "Haotian Lin", "Zhizhe Liu", "Lei He", "Jianqiang Wang"]
+summary: "This paper introduces a diffusion-based, LLM-enhanced traffic simulation framework with a chain-of-thought mechanism and Frenet-frame-based cost functions to improve controllability and spatial understanding in autonomous driving scenario generation, achieving superior performance on the Waymo Open Motion Dataset. **Revised version has been accepted by IROS 2025 with oral presentation.**"
 cover:
-    alt: "When Charts Deceive: Misleading Visuals in Corporate Presentations"
+    alt: "Controllable Traffic Simulation through LLM-Guided Hierarchical Chain-of-Thought Reasoning"
     relative: true
 editPost:
-    URL: ""
-    Text: "Will be Coming Soon"
+    URL: "https://arxiv.org/pdf/2409.15135"
+    Text: "arXiv preprint arXiv:2409.15135"
 ---
 
 ---
 
 ##### Abstract
 
-Visuals in earnings-call decks can shape how investors read the numbers, yet they largely fall outside existing disclosure oversight. We compile 432,003 slides containing 153,331 charts from 2003–2023 and use transformer-based computer-vision models to detect five presentation features that can bias perception: missing Y-axes, truncated Y-axes, dual Y-axes, 3-D effects, and omitted data labels. These features are widespread—appearing in over half of calls—and are most common in nonfinancial disclosure slides. Usage varies systematically across firms: smaller and more profitable firms employ them more, while firms with greater stock-return volatility, stronger investor-relations oversight, or higher retail engagement employ them less. Event-study tests show that calls featuring such charts experience positive short-term abnormal returns that subsequently reverse, consistent with temporary investor misperception, an effect strongest for missing Y-axes in nonfinancial disclosures. Within-firm persistence suggests a stable presentation policy rather than isolated lapses. Our evidence positions slide design as an economically meaningful disclosure margin and highlights a regulatory blind spot: visual elements in corporate presentations merit scrutiny comparable to that applied to narrative and numerical disclosures.
+Evaluating autonomous driving systems in complex and diverse traffic scenarios through controllable simulation is essential to ensure their safety and reliability. However, existing traffic simulation methods face challenges in their controllability. To address this, this paper proposes a novel diffusion-based and LLM-enhanced traffic simulation framework. Our approach incorporates a unique chain-of-thought (CoT) mechanism, which systematically examines the hierarchical structure of traffic elements and guides LLMs to thoroughly analyze traffic scenario descriptions step by step, enhancing their understanding of complex situations. Furthermore, we propose a Frenet-frame-based cost function framework that provides LLMs with geometrically meaningful quantities, improving their grasp of spatial relationships in a scenario and enabling more accurate cost function generation. Experiments on the Waymo Open Motion Dataset (WOMD) demonstrate that our method handles more intricate descriptions, generates a broader range of scenarios in a controllable manner, and outperforms existing diffusion-based methods in terms of efficiency.
 
+---
+
+##### Citation
+
+Liu, Zhiyuan, et al. "Controllable traffic simulation through llm-guided hierarchical chain-of-thought reasoning." *arXiv preprint arXiv:2409.15135* (2024).
+
+```BibTeX
+@article{liu2024controllable,
+  title={Controllable traffic simulation through llm-guided hierarchical chain-of-thought reasoning},
+  author={Liu, Zhiyuan and Li, Leheng and Wang, Yuning and Lin, Haotian and Liu, Zhizhe and He, Lei and Wang, Jianqiang},
+  journal={arXiv preprint arXiv:2409.15135},
+  year={2024}
+}
+```
 

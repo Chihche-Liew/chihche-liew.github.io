@@ -54,7 +54,7 @@ layout: page
     <div>Supervised by Baojun Gao</div>
     <div class="exp-points">NLP for Online Platforms, Sentiment Analysis, Large-scale Data Processing with Spark</div>
   </div>
-  <div class="exp-date">06-2022 - 07-2022; 03-2024 – 06-2024</div>
+  <div class="exp-date">03-2024 – 06-2024<br>06-2022 - 07-2022</div>
 </div>
 
 <div class="exp-entry">

@@ -4,6 +4,7 @@ theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
+buildFuture: true
 pagination:
   pagerSize: 20
 
@@ -15,7 +16,7 @@ menu:
         - name: Publications
           url: pubs/
           weight: 1
-        - name: Current Projects
+        - name: Work In Progress
           url: proj/
           weight: 2
         - name: Working Experience
@@ -44,7 +45,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["Publications","Current Projects","Research Toolkits"]
+    MainSections: ["Publications","Work In Progress","Research Toolkits"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -55,14 +56,17 @@ params:
     profileMode:
           enabled: true
           title: Zhizhe Liu
-          subtitle: "Hi, I am a graduate student at Computer Sciences, UW-Madison, and a researcher with a strong focus on archival financial accounting. I leverage deep learning, natural language processing, and high-performance computing to study issues such as emerging risks' exposure, potential information in disclosure, and return/fundamental performance predictability. My research is driven by a desire to understand the economic consequences of disclosure and regulatory reporting in modern capital markets, and how new technology can make changes to the format, content and information of disclosure.  There're also some pipelines and scripts which may be useful to archival financial researchers in the 'Research Toolkits' part. Hope they will help!"
-          imageUrl: "ZhizheLiu.png"
+          subtitle: "@ Computer Sciences, UW-Madison"
+          subtitle1: "Hi, I am a graduate student at Computer Sciences, UW-Madison, and a researcher with a strong focus on archival financial accounting."
+          subtitle2: "My research sits at the novel intersection of computational methods, investor cognition, and capital markets. I develop and apply a diverse toolkit—spanning Natural Language Processing, Computer Vision, and Human-Computer Interaction—to investigate how the form, content, and framing of corporate disclosures shape economic reality."
+          subtitle4: "My goal is to leverage technology not just to analyze accounting information, but to build a more transparent, accessible, and efficient information ecosystem. There're also some pipelines, scripts and replication packages which may be useful to archival financial accounting researchers in the 'Research Toolkits' part. Hope they will help!"
+          imageUrl: "ZhizheLiuPage.jpg"
           imageWidth: 160
           imageHeight: 160
           buttons:
             - name: Publications
               url: pubs/
-            - name: Current Projects
+            - name: Work In Progress
               url: proj/
             - name: Working Experience
               url: working/
