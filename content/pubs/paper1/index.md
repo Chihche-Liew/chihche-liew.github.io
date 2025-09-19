@@ -2,7 +2,7 @@
 title: "Controllable Traffic Simulation through LLM-Guided Hierarchical Chain-of-Thought Reasoning" 
 date: 2024-09-23
 author: ["Zhiyuan Liu", "Leheng Li", "Yuning Wang", "Haotian Lin", "Zhizhe Liu", "Lei He", "Jianqiang Wang"]
-summary: "This paper introduces a diffusion-based, LLM-enhanced traffic simulation framework with a chain-of-thought mechanism and Frenet-frame-based cost functions to improve controllability and spatial understanding in autonomous driving scenario generation, achieving superior performance on the Waymo Open Motion Dataset."
+summary: "This paper introduces a diffusion-based, LLM-enhanced traffic simulation framework with a chain-of-thought mechanism and Frenet-frame-based cost functions to improve controllability and spatial understanding in autonomous driving scenario generation, achieving superior performance on the Waymo Open Motion Dataset. **Revised version has been accepted by IROS 2025 with oral presentation.**"
 cover:
     alt: "Controllable Traffic Simulation through LLM-Guided Hierarchical Chain-of-Thought Reasoning"
     relative: true
@@ -31,3 +31,4 @@ Liu, Zhiyuan, et al. "Controllable traffic simulation through llm-guided hierarc
   year={2024}
 }
 ```
+

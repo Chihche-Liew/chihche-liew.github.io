@@ -73,6 +73,28 @@ layout: page
 
 ---
 
+### 7. Replication of Daniel et al. (1997, JF)
+
+**Summary**: Replication package for Daniel, Grinblatt, Titman & Wermers (1997) "Measuring Mutual Fund Performance with Characteristic-Based Benchmarks" from Journal of Finance. Constructs 125 characteristic-sorted portfolios (5×5×5) using size, book-to-market, and momentum quintiles for precise mutual fund performance evaluation. [repository here](https://github.com/Chihche-Liew/DGTW-Portfolio)
+
+**Features**:
+
+- Constructs 125 value-weighted characteristic-sorted portfolios using NYSE breakpoints for size, book-to-market, and momentum quintiles
+- Implements proper momentum calculation (12-2 month window) with minimum 8 valid return observations and handles multiple share classes
+- Outputs portfolio returns and stock-benchmark mapping files for precise mutual fund performance evaluation against characteristic-matched benchmarks 
+
+---
+
+### 8. Replication of Call et al. (2023, RAST)
+
+**Summary**: Replication package for "Managers' use of humor on public earnings conference calls" (Call et al., 2023, Review of Accounting Studies). Reproduces tone calculation methodology using Capital IQ transcripts and Loughran-McDonald sentiment dictionary to analyze manager and analyst sentiment on earnings calls. [repository here](https://github.com/Chihche-Liew/Tone-Analyst-Manager)
+
+**Features**:
+
+- Separates manager statements (type 4) and analyst statements (type 3) from earnings call transcripts with automated text preprocessing
+- Applies Loughran-McDonald sentiment dictionary to compute tone scores as (positive_words - negative_words) / total_sentiment_words
+- Outputs transcript-level tone measures (`tone_manager` and `tone_analyst`) for comprehensive earnings call sentiment analysis
+
 ## R
 
 ### 1. Replication and Extension of García et al. (2023, JFE)

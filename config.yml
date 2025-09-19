@@ -56,9 +56,9 @@ params:
           enabled: true
           title: Zhizhe Liu
           subtitle: "Hi, I am a graduate student at Computer Sciences, UW-Madison, and a researcher with a strong focus on archival financial accounting. I leverage deep learning, natural language processing, and high-performance computing to study issues such as emerging risks' exposure, potential information in disclosure, and return/fundamental performance predictability. My research is driven by a desire to understand the economic consequences of disclosure and regulatory reporting in modern capital markets, and how new technology can make changes to the format, content and information of disclosure.  There're also some pipelines and scripts which may be useful to archival financial researchers in the 'Research Toolkits' part. Hope they will help!"
-#          imageUrl: "picture.jpeg"
-#          imageWidth: 160
-#          imageHeight: 160
+          imageUrl: "ZhizheLiu.png"
+          imageWidth: 160
+          imageHeight: 160
           buttons:
             - name: Publications
               url: pubs/
@@ -75,11 +75,13 @@ params:
         - name: CV
           url: Zhizhe_Liu_CV.pdf
         - name: Email
-          url: mailto:zhizhe_liu@cs.wisc.edu
+          url: mailto:zhizhe.liu@cs.edu
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=Eez1mkMAAAAJ&hl=en
         - name: GitHub
           url: https://github.com/Chihche-Liew
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/zhizhe-liu/
 
     assets:
         disableScrollBarStyle: true
