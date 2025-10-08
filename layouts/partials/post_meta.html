@@ -1,5 +1,9 @@
 {{- $scratch := newScratch }}
 
+{{- with .Param "status" -}}
+  {{- $scratch.Set "status" . -}}
+{{- end -}}
+
 {{- if not .Date.IsZero -}}
 {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
 {{- end }}
@@ -18,6 +22,10 @@
 {{- end }}
 {{- end }}
 
+{{- with $scratch.Get "status" -}}
+<div class="post-meta-status"><small>{{ . | safeHTML }}</small></div>
+{{- end -}}
+
 {{- with ($scratch.Get "meta") }}
-{{- delimit . "&nbsp;&middot;&nbsp;" | safeHTML -}}
+<div class="post-meta-main">{{ delimit . "&nbsp;&middot;&nbsp;" | safeHTML }}</div>
 {{- end -}}

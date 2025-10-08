@@ -6,8 +6,8 @@ layout: page
 
 ## Python
 
-### 1. WRDS Event Study (Polars + DuckDB)
-**Summary**: A high-performance event study framework replicating the WRDS Python event study app, enhanced with Polars and DuckDB for ~240x acceleration. [repository here](https://github.com/Chihche-Liew/Event-Study-Polars)  
+### 1. [WRDS Event Study (Polars + DuckDB)](https://github.com/Chihche-Liew/Event-Study-Polars)
+**Summary**: A high-performance event study framework replicating the WRDS Python event study app, enhanced with Polars and DuckDB for ~240x acceleration.  
 
 **Features**:
 
@@ -17,8 +17,8 @@ layout: page
 
 ---
 
-### 2. GPT-Disclosure Analyzer
-**Summary**: A modular pipeline for analyzing SEC filings using OpenAI GPT models, based on keywords and item extraction. [repository here](https://github.com/Chihche-Liew/GPT-Disclosure-Analyzer)  
+### 2. [GPT-Disclosure Analyzer](https://github.com/Chihche-Liew/GPT-Disclosure-Analyzer)
+**Summary**: A modular pipeline for analyzing SEC filings using OpenAI GPT models, based on keywords and item extraction.  
 
 **Features**:
 
@@ -28,8 +28,8 @@ layout: page
 
 ---
 
-### 3. Image-Text Inference with LLaVA
-**Summary**: Multimodal inference tool using LLaVA v1.5 for interpreting image + prompt input. [repository here](https://github.com/Chihche-Liew/Image-Text-Inference-LLaVA)  
+### 3. [Image-Text Inference with LLaVA](https://github.com/Chihche-Liew/Image-Text-Inference-LLaVA)
+**Summary**: Multimodal inference tool using LLaVA v1.5 for interpreting image + prompt input.  
 
 **Features**:
 
@@ -39,9 +39,9 @@ layout: page
 
 ---
 
-### 4. RavenPack News Processor
+### 4. [RavenPack News Processor](https://github.com/Chihche-Liew/RavenPack-News-Processor)
 
-**Summary**: A Python pipeline designed for processing RavenPack news event data and extract events with focused keywords retrieved from WRDS with acceleration using Polars and DuckDB. [repository here](https://github.com/Chihche-Liew/RavenPack-News-Processor)
+**Summary**: A Python pipeline designed for processing RavenPack news event data and extract events with focused keywords retrieved from WRDS with acceleration using Polars and DuckDB. 
 
 **Features**:
 
@@ -51,9 +51,9 @@ layout: page
 
 ---
 
-### 5. FF Industry Parser
+### 5. [FF Industry Parser](https://github.com/Chihche-Liew/FF-Industry-Parser)
 
-**Summary**: A lightweight parser for mapping SIC codes to Fama-French industry categories from structured `.txt` definitions. [repository here](https://github.com/Chihche-Liew/FF-Industry-Parser)  
+**Summary**: A lightweight parser for mapping SIC codes to Fama-French industry categories from structured `.txt` definitions.  
 
 **Features**:
 
@@ -62,9 +62,9 @@ layout: page
 
 ---
 
-### 6. Replication and Extension of Donelson et al. (2011, TAR)
+### 6. [Replication and Extension of Donelson et al. (2011, TAR)](https://github.com/Chihche-Liew/Changes-over-Time-Replication-and-Extension)
 
-**Summary**: This project replicates and extends the empirical results of Donelson et al. (2011) using Compustat data from WRDS. The replication not only validates the original study (1967-2005) but also extends the analysis to more recent periods (up to 2023) to test the robustness of the findings. [repository here](https://github.com/Chihche-Liew/Changes-over-Time-Replication-and-Extension)
+**Summary**: This project replicates and extends the empirical results of Donelson et al. (2011) using Compustat data from WRDS. The replication not only validates the original study (1967-2005) but also extends the analysis to more recent periods (up to 2023) to test the robustness of the findings. 
 
 **Features**:
 
@@ -73,9 +73,9 @@ layout: page
 
 ---
 
-### 7. Replication of Daniel et al. (1997, JF)
+### 7. [Replication of Daniel et al. (1997, JF)](https://github.com/Chihche-Liew/DGTW-Portfolio)
 
-**Summary**: Replication package for Daniel, Grinblatt, Titman & Wermers (1997) "Measuring Mutual Fund Performance with Characteristic-Based Benchmarks" from Journal of Finance. Constructs 125 characteristic-sorted portfolios (5×5×5) using size, book-to-market, and momentum quintiles for precise mutual fund performance evaluation. [repository here](https://github.com/Chihche-Liew/DGTW-Portfolio)
+**Summary**: Replication package for Daniel, Grinblatt, Titman & Wermers (1997) "Measuring Mutual Fund Performance with Characteristic-Based Benchmarks" from Journal of Finance. Constructs 125 characteristic-sorted portfolios (5×5×5) using size, book-to-market, and momentum quintiles for precise mutual fund performance evaluation. 
 
 **Features**:
 
@@ -85,9 +85,9 @@ layout: page
 
 ---
 
-### 8. Replication of Call et al. (2023, RAST)
+### 8. [Replication of Call et al. (2023, RAST)](https://github.com/Chihche-Liew/Tone-Analyst-Manager)
 
-**Summary**: Replication package for "Managers' use of humor on public earnings conference calls" (Call et al., 2023, Review of Accounting Studies). Reproduces tone calculation methodology using Capital IQ transcripts and Loughran-McDonald sentiment dictionary to analyze manager and analyst sentiment on earnings calls. [repository here](https://github.com/Chihche-Liew/Tone-Analyst-Manager)
+**Summary**: Replication package for "Managers' use of humor on public earnings conference calls" (Call et al., 2023, Review of Accounting Studies). Reproduces tone calculation methodology using Capital IQ transcripts and Loughran-McDonald sentiment dictionary to analyze manager and analyst sentiment on earnings calls. 
 
 **Features**:
 
@@ -97,9 +97,9 @@ layout: page
 
 ## R
 
-### 1. Replication and Extension of García et al. (2023, JFE)
+### 1. [Replication and Extension of García et al. (2023, JFE)](https://github.com/Chihche-Liew/The-Color-of-Finance-Words-Replication-and-Optimization)
 
-**Project**: Joint work with Miao Liu and Yang Cao at Boston College. This project replicates and extends the methodology from García et al. (2023, JFE) using updated conversation datasets and customized NLP models. [repository here](https://github.com/Chihche-Liew/The-Color-of-Finance-Words-Replication-and-Optimization)
+**Project**: Joint work with Miao Liu and Yang Cao at Boston College. This project replicates and extends the methodology from García et al. (2023, JFE) using updated conversation datasets and customized NLP models. 
 
 **Features**:
 
@@ -112,9 +112,9 @@ layout: page
 
 ## SAS 
 
-### 1. High-Frequency Event Study TAQ
+### 1. [High-Frequency Event Study TAQ](https://github.com/Chihche-Liew/High-Frequency-Event-Study-TAQ)
 
-**Summary**: It systematically extracts short-window trading activity and quote information around event timestamps to facilitate detailed market microstructure analysis. [repository here](https://github.com/Chihche-Liew/High-Frequency-Event-Study-TAQ)
+**Summary**: It systematically extracts short-window trading activity and quote information around event timestamps to facilitate detailed market microstructure analysis. 
 
 **Features**:
 
