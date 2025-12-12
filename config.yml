@@ -32,6 +32,7 @@ menu:
 params:
     description: "This website hosts Zhizhe Liu's personal information and the scripts which could be commonly used in accounting research."
     author: Zhizhe Liu
+    env: production
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light

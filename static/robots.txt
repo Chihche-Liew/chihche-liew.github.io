@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chihche-liew.github.io/sitemap.xml
