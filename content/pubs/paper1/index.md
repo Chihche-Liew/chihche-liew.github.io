@@ -1,20 +1,18 @@
 ---
-title: "When Charts Deceive: Misleading Visuals in Corporate Presentations" 
-date: 2025-08-01
+title: "When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Presentations" 
+date: 2025-11-30
 author: ["Yang Cao", "Miao Liu", "Zhizhe Liu"]
-summary: "This paper analyzes 432k earnings-call slides with transformer vision models to detect five bias-prone chart features, showing they are widespread, systematically used, and linked to short-term return misperceptions that later reverse."
-status: "Accepted by <a href=\"https://manoa.hawaii.edu/harc/\" target=\"_blank\" rel=\"noopener\">HARC 2026</a>, Under Review by Other Conferences"
+summary: "Using 17,546 earnings-call decks (432,003 slides; 175,231 charts) from 2003 to 2023, we show that informative visuals reduce investor uncertainty (lower option-implied volatility), while misleading chart designs trigger short-run mispricing that reverses within 30 trading days—revealing visual disclosure as a powerful but under-regulated margin of corporate reporting."
+status: "Accepted by <a href=\"https://manoa.hawaii.edu/harc/\" target=\"_blank\" rel=\"noopener\">HARC 2026</a>, <a href=\"https://aaahq.org/Meetings/2026/FARS-Midyear-Meeting\" target=\"_blank\" rel=\"noopener\">2026 FARS Midyear Meeting</a>, Under Review by <a href=\"https://onlinelibrary.wiley.com/journal/1475679x\" target=\"_blank\" rel=\"noopener\">Journal of Accounting Research</a>"
 cover:
-    alt: "When Charts Deceive: Misleading Visuals in Corporate Presentations"
+    alt: "When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Presentations"
     relative: true
 editPost:
     URL: ""
     Text: "Will be Coming Soon"
 ---
-
 ---
 
 ##### Abstract
 
-Visuals in earnings-call decks can shape how investors read the numbers, yet they largely fall outside existing disclosure oversight. We compile 432,003 slides containing 153,331 charts from 2003–2023 and use transformer-based computer-vision models to detect five presentation features that can bias perception: missing Y-axes, truncated Y-axes, dual Y-axes, 3-D effects, and omitted data labels. These features are widespread—appearing in over half of calls—and are most common in nonfinancial disclosure slides. Usage varies systematically across firms: smaller and more profitable firms employ them more, while firms with greater stock-return volatility, stronger investor-relations oversight, or higher retail engagement employ them less. Event-study tests show that calls featuring such charts experience positive short-term abnormal returns that subsequently reverse, consistent with temporary investor misperception, an effect strongest for missing Y-axes in nonfinancial disclosures. Within-firm persistence suggests a stable presentation policy rather than isolated lapses. Our evidence positions slide design as an economically meaningful disclosure margin and highlights a regulatory blind spot: visual elements in corporate presentations merit scrutiny comparable to that applied to narrative and numerical disclosures.
-
+Visuals have become a core language of corporate storytelling in earnings communications, yet their capital-market consequences remain poorly understood. Using 432,003 slides and 175,231 charts from 17,546 earnings-call decks between 2003 and 2023, we study how visual disclosure shapes investor uncertainty and price formation. We first show that more informative visuals reduce uncertainty: firms that use more chart-containing slides exhibit significantly lower option-implied volatility around earnings calls. This effect is stronger for firms that are harder to value ex ante—those with more segments, greater intangible investment, and higher pre-call idiosyncratic volatility or analyst dispersion. Second, using transformer-based computer-vision models, we detect five bias-prone chart features—missing and truncated Y-axes, dual Y-axes, 3-D effects, and omitted data labels—and show that calls with more such misleading visuals earn higher short-window abnormal returns that reverse over the subsequent 30 trading days, suggesting temporary misperception. Misleading visuals are accompanied by verbal narration that is more positive in tone and less quantitatively detailed, and managers strategically delay posting slide decks, indicating a deliberate disclosure policy rather than random error. Together, our findings show that visuals are an economically important disclosure margin that both reduces information uncertainty when used well and distorts prices when design choices exploit perceptual biases, highlighting a regulatory blind spot in current oversight of corporate reporting.

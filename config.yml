@@ -57,9 +57,8 @@ params:
           enabled: true
           title: Zhizhe Liu
           subtitle: "@ Computer Sciences, UW-Madison"
-          subtitle1: "Hi, I am a graduate student at Computer Sciences, UW-Madison, and a researcher with a strong focus on archival financial accounting."
-          subtitle2: "My research sits at the novel intersection of computational methods, investor cognition, and capital markets. I develop and apply a diverse toolkit—spanning Natural Language Processing, Computer Vision, and Human-Computer Interaction—to investigate how the form, content, and framing of corporate disclosures shape economic reality."
-          subtitle4: "My goal is to leverage technology not just to analyze accounting information, but to build a more transparent, accessible, and efficient information ecosystem. There're also some pipelines, scripts and replication packages which may be useful to archival financial accounting researchers in the 'Research Toolkits' part. Hope they will help!"
+          subtitle1: "Hi, I am a graduate student at Computer Sciences, UW-Madison, and a researcher with a strong focus on archival financial accounting. My research interest sits at corporate disclosure and information processing and their consequences in capital markets. "
+          subtitle4: "There're also some pipelines, scripts and replication packages which may be useful to capital-market researchers in the 'Research Toolkits' part. Hope they will help!"
           imageUrl: "ZhizheLiuPage.jpg"
           imageWidth: 160
           imageHeight: 160
