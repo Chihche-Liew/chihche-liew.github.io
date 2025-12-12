@@ -78,7 +78,7 @@ params:
         - name: CV
           url: Zhizhe_Liu_CV.pdf
         - name: Email
-          url: mailto:zhizhe.liu@cs.edu
+          url: mailto:zhizhe.liu@wisc.edu
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=Eez1mkMAAAAJ&hl=en
         - name: GitHub
