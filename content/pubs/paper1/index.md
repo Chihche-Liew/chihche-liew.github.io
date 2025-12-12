@@ -3,7 +3,7 @@ title: "When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Pres
 date: 2025-11-30
 author: ["Yang Cao", "Miao Liu", "Zhizhe Liu"]
 summary: "Using 17,546 earnings-call decks (432,003 slides; 175,231 charts) from 2003 to 2023, we show that informative visuals reduce investor uncertainty (lower option-implied volatility), while misleading chart designs trigger short-run mispricing that reverses within 30 trading days—revealing visual disclosure as a powerful but under-regulated margin of corporate reporting."
-status: "Accepted by <a href=\"https://manoa.hawaii.edu/harc/\" target=\"_blank\" rel=\"noopener\">HARC 2026</a>, <a href=\"https://aaahq.org/Meetings/2026/FARS-Midyear-Meeting\" target=\"_blank\" rel=\"noopener\">2026 FARS Midyear Meeting</a>, Under Review by <a href=\"https://onlinelibrary.wiley.com/journal/1475679x\" target=\"_blank\" rel=\"noopener\">Journal of Accounting Research</a>"
+status: "Accepted by <a href=\"https://manoa.hawaii.edu/harc/\" target=\"_blank\" rel=\"noopener\">HARC 2026</a>, <a href=\"https://aaahq.org/Meetings/2026/FARS-Midyear-Meeting\" target=\"_blank\" rel=\"noopener\">2026 FARS Midyear Meeting</a>, Under Review at <a href=\"https://onlinelibrary.wiley.com/journal/1475679x\" target=\"_blank\" rel=\"noopener\">Journal of Accounting Research</a>"
 cover:
     alt: "When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Presentations"
     relative: true
