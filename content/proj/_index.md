@@ -3,7 +3,6 @@ title: "Teaching Experience"
 type: page
 layout: page
 ---
-
 ### Detecting, Quantifying, and Analyzing Accounting Standards Adoption Effects
 
 Co-authored with Miao Liu and Andrea Tillet
@@ -14,4 +13,4 @@ Co-authored with Huan Liu, Miao Liu and Danqing Mei
 
 ### Supply Chain Risk in Disclosure: Measurement with LLM Approach
 
-Solo-authored
+Sole-authored
