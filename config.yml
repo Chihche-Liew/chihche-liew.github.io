@@ -58,7 +58,7 @@ params:
           enabled: true
           title: Zhizhe Liu
           subtitle: "@ Computer Sciences, UW-Madison"
-          subtitle1: "Hi, I am a graduate student at Computer Sciences, UW-Madison, and a researcher with a strong focus on archival financial accounting. My research interest sits at corporate disclosure and information processing and their consequences in capital markets. "
+          subtitle1: "Hi, I am a graduate student at Computer Sciences, UW-Madison. My research interest sits at corporate disclosure and information processing and their consequences in capital markets. "
           subtitle4: "There're also some pipelines, scripts and replication packages which may be useful to capital-market researchers in the 'Research Toolkits' part. Hope they will help!"
           imageUrl: "ZhizheLiuPage.jpg"
           imageWidth: 160
