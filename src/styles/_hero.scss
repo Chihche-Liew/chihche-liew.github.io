@@ -22,7 +22,6 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    text-align: center;
     gap: 2.5rem;
     padding: 3rem 1.5rem;
   }
@@ -74,7 +73,6 @@
   line-height: 1.75;
 
   @media (max-width: 768px) {
-    margin: 0 auto;
     max-width: 100%;
   }
 }
@@ -100,9 +98,6 @@
     font-size: 0.88rem;
     flex-wrap: wrap;
 
-    @media (max-width: 768px) {
-      justify-content: center;
-    }
   }
 }
 
@@ -127,9 +122,6 @@
   font-weight: 500;
   margin-left: auto;
 
-  @media (max-width: 768px) {
-    margin-left: 0;
-  }
 }
 
 .hero-links {
@@ -138,10 +130,6 @@
   gap: 1.5rem;
   margin-top: 2rem;
   flex-wrap: wrap;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
 }
 
 .btn {
