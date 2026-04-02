@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Zhizhe Liu – PhD student in Computer Sciences at UW-Madison. Research in corporate disclosure, capital markets, and machine learning applications in accounting.">
+<meta name="author" content="Zhizhe Liu">
+<title>Zhizhe Liu</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/main.css">
+
+</head>
+<body>
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#hero" aria-label="Home">Zhizhe Liu</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#research" data-section="research">Research</a></li>
+      <li><a href="/val-agent/">AlphaVal Agent</a></li>
+      <li><a href="#teaching" data-section="teaching">Teaching</a></li>
+      <li><a href="#toolkits" data-section="toolkits">Toolkits</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <main>
+    <section id="hero" class="section-hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1 class="hero-name">Zhizhe Liu</h1>
+      <p class="hero-bio">I am an incoming PhD student in Accounting at Columbia Business School. My research interests are in disclosure, information processing, and AI in accounting.</p>
+      <p class="hero-bio hero-bio-2">I also maintain a collection of pipelines, scripts, and replication packages for capital-market researchers in the Research Toolkits section.</p>
+
+      <ul class="edu-list">
+        <li>
+          <span class="edu-degree">Ph.D. Accounting</span>
+          <span class="edu-school">Columbia University</span>
+          <span class="edu-year">Expected 2031</span>
+        </li>
+        <li>
+          <span class="edu-degree">M.S. Data Science</span>
+          <span class="edu-school">University of Wisconsin-Madison</span>
+          <span class="edu-year">2026</span>
+        </li>
+        <li>
+          <span class="edu-degree">B.B.A. Supply Chain Management</span>
+          <span class="edu-school">Wuhan University</span>
+          <span class="edu-year">2024</span>
+        </li>
+      </ul>
+
+      <div class="hero-links">
+        <div class="social-icons">
+          <a href="/Zhizhe_Liu_CV.pdf" aria-label="Curriculum Vitae" title="CV" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </a>
+          <a href="mailto:zhizhe.liu@columbia.edu" aria-label="Email" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://scholar.google.com/citations?user=Eez1mkMAAAAJ&amp;hl=en" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 10a8 8 0 0 1 7.162 3.44L24 9.5z"/></svg>
+          </a>
+          <a href="https://github.com/Chihche-Liew" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/zhizhe-liu/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame">
+        <img src="/ZhizheLiuPage.jpg" alt="Zhizhe Liu" class="hero-photo" width="240" height="240">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="research" class="section-alt">
+  <div class="container">
+    <h2 class="section-title">Research</h2>
+
+    <h3 class="section-title section-title-sub">Working Papers</h3>
+    <div class="pub-list">
+      
+      
+      <article class="pub-card" id="pub1">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <h3 class="pub-title">Human-AI Collaboration in Corporate Valuation: Experimental Evidence with a Valuation AI Agent</h3>
+          
+          <p class="pub-authors">with Huan Liu, <a href="https://miao-liu.com" target="_blank" rel="noopener">Miao Liu</a> and <a href="https://www.danqingmei.com/" target="_blank" rel="noopener">Danqing Mei</a></p>
+          
+          <div class="pub-status-row">
+            <span class="badge badge-review">Under Review at Journal of Accounting and Economics</span>
+            
+            <a href="/val-agent/" class="badge badge-agent">AlphaVal Agent</a>
+            
+          </div>
+          <div class="pub-abstract-wrap">
+            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-pub1">
+              Abstract <span class="toggle-icon">+</span>
+            </button>
+            <p class="pub-abstract" id="abstract-pub1" hidden>In an era where AI can deliver increasingly sophisticated hard information, we study how AI can facilitate human soft information production and make human-AI collaboration in corporate valuation more productive. We develop a retrieval-augmented AI agent that reads financial filings and produces interactive dashboards and valuation analytics. We embed an experiment in an advanced business course in which students use the AI agent to value real firms, varying the amount of AI-supplied hard information across three interfaces: bare retrieval (Low-Hard), dashboards that summarize financials but do not propose a valuation (Medium-Hard), and dashboards plus AI-generated valuations (High-Hard). Using full chat logs and valuation memos from participants, we construct rich measures of soft information and relate them to ex ante financial statement analysis (FSA) knowledge. We find a non-monotonic effect of AI-supplied hard information: relative to Low-Hard, dashboards in Medium-Hard substantially increase soft information production, whereas adding AI valuations in High-Hard yields much smaller incremental gains and appears to induce anchoring. FSA knowledge amplifies the benefits of dashboards and mitigates, but does not eliminate, crowding out in High-Hard. Our results clarify when AI acts as a complementary hard-information engine versus a substitute for human soft information production, and offer guidance for the design of valuation tools and curricula in the LLM era.</p>
+          </div>
+          
+          <div class="pub-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6485198" class="pub-link" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              SSRN
+            </a>
+          </div>
+          
+        </div>
+      </article>
+      
+      
+      
+      <article class="pub-card" id="pub2">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <h3 class="pub-title">When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Presentations</h3>
+          
+          <p class="pub-authors">with <a href="https://www.yangcao.me/" target="_blank" rel="noopener">Yang Cao</a> and <a href="https://miao-liu.com" target="_blank" rel="noopener">Miao Liu</a></p>
+          
+          <div class="pub-status-row">
+            <span class="badge badge-review">Under Review at Journal of Accounting Research</span>
+            
+          </div>
+          <div class="pub-abstract-wrap">
+            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-pub2">
+              Abstract <span class="toggle-icon">+</span>
+            </button>
+            <p class="pub-abstract" id="abstract-pub2" hidden>Visuals have become a core language of corporate storytelling in earnings communications, yet their capital-market consequences remain poorly understood. Using 432,003 slides and 175,231 charts from 17,546 earnings-call decks between 2003 and 2023, we study how visual disclosure shapes investor uncertainty and price formation. We first show that more informative visuals reduce uncertainty: firms that use more chart-containing slides exhibit significantly lower option-implied volatility around earnings calls. This effect is stronger for firms that are harder to value ex ante—those with more segments, greater intangible investment, and higher pre-call idiosyncratic volatility or analyst dispersion. Second, using transformer-based computer-vision models, we detect five bias-prone chart features—missing and truncated Y-axes, dual Y-axes, 3-D effects, and omitted data labels—and show that calls with more such misleading visuals earn higher short-window abnormal returns that reverse over the subsequent 30 trading days, suggesting temporary misperception. Misleading visuals are accompanied by verbal narration that is more positive in tone and less quantitatively detailed, and managers strategically delay posting slide decks, indicating a deliberate disclosure policy rather than random error.</p>
+          </div>
+          
+          <div class="pub-links">
+            <span class="pub-link-muted">Coming Soon</span>
+          </div>
+          
+        </div>
+      </article>
+      
+      
+      
+      
+    </div>
+
+    <h3 class="section-title section-title-sub">Conference Papers</h3>
+    <div class="pub-list">
+      
+      
+      
+      
+      
+      
+      <article class="pub-card" id="pub3">
+        <div class="pub-year">2024</div>
+        <div class="pub-body">
+          <h3 class="pub-title">Controllable Traffic Simulation through LLM-Guided Hierarchical Chain-of-Thought Reasoning</h3>
+          
+          <p class="pub-authors">with Zhiyuan Liu, Leheng Li, Yuning Wang, Haotian Lin, Lei He and Jianqiang Wang</p>
+          
+          <div class="pub-status-row">
+            <span class="badge badge-review">Accepted by IROS 2025</span>
+          </div>
+          <div class="pub-abstract-wrap">
+            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-pub3">
+              Abstract <span class="toggle-icon">+</span>
+            </button>
+            <p class="pub-abstract" id="abstract-pub3" hidden>Evaluating autonomous driving systems in complex and diverse traffic scenarios through controllable simulation is essential to ensure their safety and reliability. However, existing traffic simulation methods face challenges in their controllability. To address this, this paper proposes a novel diffusion-based and LLM-enhanced traffic simulation framework. Our approach incorporates a unique chain-of-thought (CoT) mechanism, which systematically examines the hierarchical structure of traffic elements and guides LLMs to thoroughly analyze traffic scenario descriptions step by step, enhancing their understanding of complex situations. Furthermore, we propose a Frenet-frame-based cost function framework that provides LLMs with geometrically meaningful quantities, improving their grasp of spatial relationships in a scenario and enabling more accurate cost function generation.</p>
+          </div>
+          
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2409.15135" class="pub-link" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              arXiv:2409.15135
+            </a>
+          </div>
+          
+        </div>
+      </article>
+      
+      
+    </div>
+
+    <div class="wip-block">
+      <h3 class="section-title section-title-sub">Works in Progress</h3>
+      <ul class="wip-list">
+        
+        <li class="wip-item">
+          <span class="wip-title">Detecting, Quantifying, and Analyzing Accounting Standards Adoption Effects</span>
+          
+          <span class="wip-authors">with <a href="https://miao-liu.com" target="_blank" rel="noopener">Miao Liu</a> and <a href="https://business.wisc.edu/directory/profile/andrea-tillet/" target="_blank" rel="noopener">Andrea Tillet</a></span>
+          
+        </li>
+        
+        <li class="wip-item">
+          <span class="wip-title">Making Tacit Knowledge Explicit: Recovering Human Judgment in Sell-Side Equity Research with AI</span>
+          
+          <span class="wip-authors">with <a href="https://miao-liu.com" target="_blank" rel="noopener">Miao Liu</a> and <a href="https://www.danqingmei.com/" target="_blank" rel="noopener">Danqing Mei</a></span>
+          
+        </li>
+        
+        <li class="wip-item">
+          <span class="wip-title">Supply Chain Risk in Disclosure: Measurement with LLM Approach</span>
+          
+          <span class="wip-authors wip-sole">Sole-authored</span>
+          
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section id="teaching" class="section-white">
+  <div class="container">
+    <h2 class="section-title">Teaching</h2>
+    <div class="teaching-grid">
+      <div class="teaching-card">
+        <div class="teaching-card-accent"></div>
+        <div class="teaching-body">
+          <h3>Teaching Assistant</h3>
+          <p class="teaching-org">Wisconsin School of Business, University of Wisconsin-Madison</p>
+          <ul class="teaching-courses">
+            <li><span class="course-term">Spring 2026</span> AIS 301/701 Financial Reporting I</li>
+            <li><span class="course-term">Spring 2025</span> AIS 301/701 Financial Reporting I</li>
+          </ul>
+        </div>
+      </div>
+      <div class="teaching-card">
+        <div class="teaching-card-accent"></div>
+        <div class="teaching-body">
+          <h3>Teaching Assistant</h3>
+          <p class="teaching-org">Economics and Management School, Wuhan University</p>
+          <ul class="teaching-courses">
+            <li><span class="course-term">Spring 2024</span> Data Analysis using R: Methods and Applications</li>
+            <li><span class="course-term">Spring 2023</span> Data Analysis using R: Methods and Applications</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="toolkits" class="section-alt">
+  <div class="container">
+    <h2 class="section-title">Research Toolkits</h2>
+    <p class="section-desc">Open-source pipelines and replication packages for empirical accounting and finance research.</p>
+
+    <div class="toolkit-tabs" role="tablist">
+      <button class="toolkit-tab active" role="tab" aria-selected="true" data-lang="python">
+        Python <span class="tab-count">8</span>
+      </button>
+      <button class="toolkit-tab" role="tab" aria-selected="false" data-lang="r">
+        R <span class="tab-count">1</span>
+      </button>
+      <button class="toolkit-tab" role="tab" aria-selected="false" data-lang="sas">
+        SAS <span class="tab-count">1</span>
+      </button>
+    </div>
+
+    
+    <div class="toolkit-panel " id="lang-python">
+      <div class="toolkit-grid">
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/Event-Study-Polars" target="_blank" rel="noopener">WRDS Event Study (Polars + DuckDB)</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/Event-Study-Polars" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">High-performance event study framework replicating the WRDS Python app, enhanced with Polars and DuckDB for ~240× acceleration.</p>
+          <ul class="toolkit-features">
+            
+            <li>Abnormal return models: market-adjusted, CAPM, FF3, Carhart4</li>
+            
+            <li>Supports CAR, BHAR, abret with flexible event windows</li>
+            
+            <li>Efficient processing of large-scale samples</li>
+            
+          </ul>
+        </div>
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/GPT-Disclosure-Analyzer" target="_blank" rel="noopener">GPT-Disclosure Analyzer</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/GPT-Disclosure-Analyzer" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">Modular pipeline for analyzing SEC filings using OpenAI GPT models via keyword and item extraction.</p>
+          <ul class="toolkit-features">
+            
+            <li>Automatic extraction of selected SEC items (e.g., Item 1, 7 of 10-K)</li>
+            
+            <li>Custom keyword filtering (unigrams and bigrams)</li>
+            
+            <li>Batch annotation via OpenAI Chat API</li>
+            
+          </ul>
+        </div>
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/Image-Text-Inference-LLaVA" target="_blank" rel="noopener">Image-Text Inference with LLaVA</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/Image-Text-Inference-LLaVA" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">Multimodal inference tool using LLaVA v1.5 for interpreting image + prompt input.</p>
+          <ul class="toolkit-features">
+            
+            <li>Supports remote and local image input</li>
+            
+            <li>Runs efficiently on GPU with float16</li>
+            
+            <li>Returns vision-language model responses</li>
+            
+          </ul>
+        </div>
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/RavenPack-News-Processor" target="_blank" rel="noopener">RavenPack News Processor</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/RavenPack-News-Processor" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">Pipeline for processing RavenPack news event data with keyword filtering, accelerated by Polars and DuckDB.</p>
+          <ul class="toolkit-features">
+            
+            <li>Supports unigram and bigram keyword filtering</li>
+            
+            <li>Polars + DuckDB for high performance</li>
+            
+            <li>Outputs .parquet files with compression</li>
+            
+          </ul>
+        </div>
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/FF-Industry-Parser" target="_blank" rel="noopener">FF Industry Parser</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/FF-Industry-Parser" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">Lightweight parser for mapping SIC codes to Fama-French industry categories.</p>
+          <ul class="toolkit-features">
+            
+            <li>Parses 49-industry (or 12) structure</li>
+            
+            <li>No external dependencies (pure re module)</li>
+            
+          </ul>
+        </div>
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/Changes-over-Time-Replication-and-Extension" target="_blank" rel="noopener">Replication of Donelson et al. (2011, TAR)</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/Changes-over-Time-Replication-and-Extension" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">Replicates and extends Donelson et al. (2011) using Compustat data, validated on 1967–2005 and extended to 2023.</p>
+          <ul class="toolkit-features">
+            
+            <li>Key financial ratios and rolling volatility metrics</li>
+            
+            <li>Replicates Table 1 and Table 2</li>
+            
+            <li>Extends analysis to 2006–2023</li>
+            
+          </ul>
+        </div>
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/DGTW-Portfolio" target="_blank" rel="noopener">Replication of Daniel et al. (1997, JF)</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/DGTW-Portfolio" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">Constructs 125 characteristic-sorted portfolios (5×5×5) using size, book-to-market, and momentum quintiles.</p>
+          <ul class="toolkit-features">
+            
+            <li>NYSE breakpoints for size, BM, and momentum quintiles</li>
+            
+            <li>12-2 month momentum window with minimum 8 valid observations</li>
+            
+            <li>Multiple share class handling</li>
+            
+          </ul>
+        </div>
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/Tone-Analyst-Manager" target="_blank" rel="noopener">Replication of Call et al. (2023, RAST)</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/Tone-Analyst-Manager" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">Replicates tone calculation from earnings call transcripts using the Loughran-McDonald sentiment dictionary.</p>
+          <ul class="toolkit-features">
+            
+            <li>Separates manager (type 4) and analyst (type 3) statements</li>
+            
+            <li>Loughran-McDonald sentiment scoring</li>
+            
+            <li>Outputs tone_manager and tone_analyst measures</li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="toolkit-panel hidden" id="lang-r">
+      <div class="toolkit-grid">
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/The-Color-of-Finance-Words-Replication-and-Optimization" target="_blank" rel="noopener">Replication of García et al. (2023, JFE)</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/The-Color-of-Finance-Words-Replication-and-Optimization" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">Joint work with Miao Liu and Yang Cao at Boston College. Replicates and extends García et al. (2023) using updated conversation datasets and customized NLP models.</p>
+          <ul class="toolkit-features">
+            
+            <li>Full replication of original variable construction pipeline</li>
+            
+            <li>FineTuneBert.py: fine-tunes Google BERT for earnings call prediction</li>
+            
+            <li>BertShap.py: interprets BERT attention via Shapley values</li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="toolkit-panel hidden" id="lang-sas">
+      <div class="toolkit-grid">
+        
+        <div class="toolkit-card">
+          <div class="toolkit-card-header">
+            <h3 class="toolkit-name">
+              <a href="https://github.com/Chihche-Liew/High-Frequency-Event-Study-TAQ" target="_blank" rel="noopener">High-Frequency Event Study TAQ</a>
+            </h3>
+            <a href="https://github.com/Chihche-Liew/High-Frequency-Event-Study-TAQ" class="github-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <p class="toolkit-summary">Extracts short-window trading activity and quote information around event timestamps for market microstructure analysis.</p>
+          <ul class="toolkit-features">
+            
+            <li>Customizable event input with your own event dataset</li>
+            
+            <li>Automatically detects and matches TAQ data files by date</li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+  </main>
+<script src="/js/main.js" defer></script>
+</body>
+</html>
