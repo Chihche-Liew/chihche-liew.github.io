@@ -100,6 +100,7 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
+      flex-wrap: nowrap;
       gap: 0.1rem;
     }
   }
@@ -108,12 +109,21 @@
 .edu-degree {
   font-weight: 600;
   color: $text-primary;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .edu-meta {
   display: inline-flex;
   align-items: baseline;
   gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    width: 100%;
+  }
 }
 
 .edu-school {
