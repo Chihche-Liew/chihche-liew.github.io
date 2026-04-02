@@ -1,0 +1,44 @@
+[
+  {
+    "role": "Research Assistant",
+    "org": "Wisconsin School of Business, University of Wisconsin-Madison",
+    "supervisor": "Andrea Tillet",
+    "period": "Aug 2024 – Present",
+    "topics": ["EDGAR Server Logs", "Approximate Randomization Tests", "CRSP Event Studies", "Abnormal Trading Activity", "Revenue Persistence", "IBES Analyst Forecasts"]
+  },
+  {
+    "role": "Research Assistant",
+    "org": "SC Johnson College of Business, Cornell University",
+    "supervisor": "Yao Lu",
+    "period": "Dec 2023 – Feb 2025",
+    "topics": ["Dodd-Frank Act Stress Test", "Text Analysis on Tranche Contracts", "USPTO Patent Database", "Bank Climate Risk Exposure", "Regulatory Research"]
+  },
+  {
+    "role": "Research Assistant",
+    "org": "Carroll School of Management, Boston College",
+    "supervisor": "Miao Liu",
+    "period": "Feb 2023 – Present",
+    "topics": ["Deep Learning in Accounting", "Fine-tuning LLMs", "Text-Image Inference", "Textual Analysis of SEC Filings", "LLM-based Disclosure Measurement", "Causal Inference in Capital Markets"]
+  },
+  {
+    "role": "Research Assistant",
+    "org": "Economics and Management School, Wuhan University",
+    "supervisor": "Baojun Gao",
+    "period": "Mar 2024 – Jun 2024 · Jun 2022 – Jul 2022",
+    "topics": ["NLP for Online Platforms", "Sentiment Analysis", "Large-scale Data Processing with Spark"]
+  },
+  {
+    "role": "Quantitative Strategy Developer",
+    "org": "Trovequant (Beijing) Tech. Ltd.",
+    "supervisor": null,
+    "period": "Jun 2022 – Mar 2023",
+    "topics": ["Crude Oil Futures Index Tracking", "Market Sentiment Strategy", "Drawdown Control"]
+  },
+  {
+    "role": "Investment Research Assistant",
+    "org": "CICC Wealth Management",
+    "supervisor": null,
+    "period": "Jul 2021 – Aug 2021",
+    "topics": ["Fundamental Analysis", "Power Industry Research", "Basic Trading Strategy"]
+  }
+]

@@ -1,0 +1,69 @@
+---
+layout: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AlphaVal Agent – AlphaVal, an AI-powered corporate valuation agent by Zhizhe Liu.">
+  <meta name="author" content="Zhizhe Liu">
+  <title>AlphaVal Agent · {{ site.title }}</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  {% include "nav-subpage.njk" %}
+  <main>
+    <section class="section-white agent-section">
+      <div class="container">
+        <h2 class="section-title">AlphaVal Agent</h2>
+
+        <div class="agent-card">
+          <div class="agent-image-wrap" id="imageWrap">
+            <img src="/alphaval.png" alt="AlphaVal – AI-Powered Corporate Valuation Agent" class="agent-image" id="agentImg">
+          </div>
+          <div class="agent-body">
+            <h3 class="agent-name">AlphaVal</h3>
+            <p class="agent-type">AI-Powered Corporate Valuation Agent</p>
+            <p class="agent-desc">A retrieval-augmented AI agent that reads financial filings and produces interactive dashboards and valuation analytics. Designed to support human-AI collaboration in corporate valuation tasks.</p>
+            <div class="agent-actions">
+              <a href="https://alphaval.ai/" class="btn btn-primary" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Visit AlphaVal
+              </a>
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6485198" class="btn btn-outline" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                Human-AI Collaboration in Corporate Valuation
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="lightbox" id="lightbox">
+    <img src="/alphaval.png" alt="AlphaVal enlarged">
+  </div>
+
+  <script src="/js/main.js" defer></script>
+  <script>
+    var lightbox = document.getElementById('lightbox');
+    document.getElementById('imageWrap').addEventListener('click', function() {
+      lightbox.classList.add('open');
+    });
+    lightbox.addEventListener('click', function() {
+      lightbox.classList.remove('open');
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') lightbox.classList.remove('open');
+    });
+  </script>
+</body>
+</html>

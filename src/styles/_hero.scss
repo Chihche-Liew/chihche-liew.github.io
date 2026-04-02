@@ -1,0 +1,232 @@
+@use 'variables' as *;
+
+.section-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: $nav-height;
+  background: $white;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 4rem;
+  position: relative;
+  z-index: 1;
+  padding: 4rem 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2.5rem;
+    padding: 3rem 1.5rem;
+  }
+}
+
+.hero-text {
+  @media (max-width: 768px) {
+    order: 2;
+  }
+}
+
+.hero-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $columbia-blue;
+  margin-bottom: 0.75rem;
+}
+
+.hero-name {
+  font-family: $font-serif;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 700;
+  color: $columbia-navy;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: $text-secondary;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+
+  .columbia-accent {
+    color: $columbia-blue;
+    font-weight: 600;
+    margin-right: 0.1em;
+  }
+}
+
+.hero-bio {
+  font-size: 1rem;
+  color: $text-secondary;
+  max-width: 540px;
+  line-height: 1.75;
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.hero-bio-2 {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: $text-muted;
+}
+
+.edu-list {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid $gray-200;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+}
+
+.edu-degree {
+  font-weight: 600;
+  color: $text-primary;
+}
+
+.edu-school {
+  color: $text-secondary;
+
+  &::before {
+    content: '·';
+    margin-right: 0.5rem;
+    color: $columbia-blue;
+  }
+}
+
+.edu-year {
+  font-size: 0.8rem;
+  color: $columbia-blue;
+  font-weight: 500;
+  margin-left: auto;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.hero-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: $radius-sm;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: $transition;
+
+  &.btn-primary {
+    background: $columbia-navy;
+    color: $white;
+    border: 2px solid $columbia-navy;
+
+    &:hover {
+      background: transparent;
+      color: $columbia-navy;
+    }
+  }
+
+  &.btn-outline {
+    background: $white;
+    color: $columbia-navy;
+    border: 2px solid $columbia-navy;
+
+    &:hover {
+      background: $columbia-navy;
+      color: $white;
+    }
+  }
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: $radius-sm;
+    color: $text-muted;
+    border: 1.5px solid $gray-200;
+    transition: $transition;
+
+    &:hover {
+      color: $columbia-navy;
+      border-color: $columbia-blue;
+      background: $columbia-light;
+    }
+  }
+}
+
+.hero-photo-wrap {
+  flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.hero-photo-frame {
+  position: relative;
+  width: 240px;
+  height: 240px;
+
+
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-lg;
+}

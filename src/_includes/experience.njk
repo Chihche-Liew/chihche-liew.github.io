@@ -1,0 +1,64 @@
+<section id="experience" class="section-white">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="exp-tabs" role="tablist">
+      <button class="exp-tab active" role="tab" aria-selected="true" data-tab="research">Research</button>
+      <button class="exp-tab" role="tab" aria-selected="false" data-tab="teaching">Teaching</button>
+    </div>
+
+    <div class="exp-panel" id="tab-research">
+      <div class="timeline">
+        {% for exp in experience %}
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">{{ exp.role }}</h3>
+                <p class="timeline-org">{{ exp.org }}</p>
+                {% if exp.supervisor %}
+                <p class="timeline-supervisor">Supervised by {{ exp.supervisor }}</p>
+                {% endif %}
+              </div>
+              <span class="timeline-period">{{ exp.period }}</span>
+            </div>
+            <div class="timeline-topics">
+              {% for topic in exp.topics %}
+              <span class="topic-tag">{{ topic }}</span>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="exp-panel hidden" id="tab-teaching">
+      <div class="teaching-grid">
+        <div class="teaching-card">
+          <div class="teaching-card-accent"></div>
+          <div class="teaching-body">
+            <h3>Teaching Assistant</h3>
+            <p class="teaching-org">Wisconsin School of Business, University of Wisconsin-Madison</p>
+            <ul class="teaching-courses">
+              <li><span class="course-term">Spring 2026</span> AIS 301/701 Financial Reporting I</li>
+              <li><span class="course-term">Spring 2025</span> AIS 301/701 Financial Reporting I</li>
+            </ul>
+          </div>
+        </div>
+        <div class="teaching-card">
+          <div class="teaching-card-accent"></div>
+          <div class="teaching-body">
+            <h3>Teaching Assistant</h3>
+            <p class="teaching-org">Economics and Management School, Wuhan University</p>
+            <ul class="teaching-courses">
+              <li><span class="course-term">Spring 2024</span> Data Analysis using R: Methods and Applications</li>
+              <li><span class="course-term">Spring 2023</span> Data Analysis using R: Methods and Applications</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

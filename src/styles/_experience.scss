@@ -1,0 +1,228 @@
+@use 'variables' as *;
+
+// ---- Experience tabs ----
+
+.exp-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid $gray-200;
+  margin-bottom: 2.5rem;
+}
+
+.exp-tab {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: $text-muted;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  transition: $transition;
+
+  &.active,
+  &:hover {
+    color: $columbia-navy;
+  }
+
+  &.active {
+    border-bottom-color: $columbia-blue;
+    color: $columbia-navy;
+  }
+}
+
+.exp-panel {
+  &.hidden {
+    display: none;
+  }
+}
+
+// ---- Timeline ----
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 8px;
+    width: 1.5px;
+    background: linear-gradient(to bottom, $columbia-blue, $columbia-light);
+  }
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 6px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: $white;
+  border: 2.5px solid $columbia-blue;
+  transition: $transition;
+
+  .timeline-item:hover & {
+    background: $columbia-blue;
+  }
+}
+
+.timeline-content {
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: $radius;
+  padding: 1.25rem 1.5rem;
+  box-shadow: $shadow-sm;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: $shadow-md;
+    border-color: $columbia-mid;
+  }
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+.timeline-role {
+  font-family: $font-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $text-primary;
+  margin-bottom: 0.15rem;
+}
+
+.timeline-org {
+  font-size: 0.9rem;
+  color: $text-secondary;
+  font-style: italic;
+}
+
+.timeline-supervisor {
+  font-size: 0.82rem;
+  color: $text-muted;
+  margin-top: 0.1rem;
+}
+
+.timeline-period {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: $columbia-blue;
+  white-space: nowrap;
+  background: $columbia-light;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.timeline-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.topic-tag {
+  font-size: 0.75rem;
+  background: $gray-100;
+  color: $gray-700;
+  padding: 0.18rem 0.55rem;
+  border-radius: 20px;
+  border: 1px solid $gray-200;
+}
+
+// ---- Teaching ----
+
+.teaching-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.teaching-card {
+  display: flex;
+  gap: 0;
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: $radius;
+  overflow: hidden;
+  box-shadow: $shadow-sm;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+}
+
+.teaching-card-accent {
+  width: 4px;
+  background: linear-gradient(to bottom, $columbia-blue, $columbia-navy);
+  flex-shrink: 0;
+}
+
+.teaching-body {
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+
+  h3 {
+    font-family: $font-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin-bottom: 0.3rem;
+  }
+}
+
+.teaching-org {
+  font-size: 0.87rem;
+  color: $text-secondary;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.teaching-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  li {
+    font-size: 0.88rem;
+    color: $text-secondary;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.course-term {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: $columbia-blue;
+  background: $columbia-light;
+  padding: 0.1rem 0.5rem;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}

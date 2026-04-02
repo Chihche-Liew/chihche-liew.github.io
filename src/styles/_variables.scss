@@ -1,0 +1,45 @@
+// Columbia University color palette
+$columbia-blue: #75AADB;
+$columbia-navy: #003087;
+$columbia-light: #EAF2F9;
+$columbia-mid: #C5DCF0;
+
+// Neutrals
+$white: #ffffff;
+$off-white: #F9FAFB;
+$gray-50: #F8FAFC;
+$gray-100: #F1F5F9;
+$gray-200: #E2E8F0;
+$gray-400: #94A3B8;
+$gray-500: #64748B;
+$gray-700: #334155;
+$gray-900: #0F172A;
+
+// Typography
+$text-primary: #0F172A;
+$text-secondary: #334155;
+$text-muted: #64748B;
+
+// Fonts
+$font-serif: 'Spectral', Georgia, 'Times New Roman', serif;
+$font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+// Layout
+$max-width: 1100px;
+$nav-height: 64px;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.04);
+$shadow-md: 0 4px 16px rgba(0, 0, 0, 0.07), 0 2px 6px rgba(0, 0, 0, 0.04);
+$shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition: 0.25s ease;
+$transition-slow: 0.4s ease;
+
+// Border radius
+$radius-sm: 4px;
+$radius: 8px;
+$radius-lg: 12px;
+$radius-xl: 16px;

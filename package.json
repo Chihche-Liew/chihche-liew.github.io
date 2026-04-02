@@ -1,0 +1,16 @@
+{
+  "name": "chihche-liew-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:css && eleventy",
+    "build:css": "sass src/styles/main.scss _site/styles/main.css --style compressed --no-source-map",
+    "dev": "concurrently \"eleventy --serve --quiet\" \"sass src/styles/main.scss _site/styles/main.css --watch --no-source-map\"",
+    "clean": "rm -rf _site"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "3.0.0",
+    "concurrently": "8.2.2",
+    "sass": "1.77.6"
+  }
+}

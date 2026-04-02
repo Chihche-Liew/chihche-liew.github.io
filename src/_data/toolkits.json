@@ -1,0 +1,68 @@
+{
+  "python": [
+    {
+      "name": "WRDS Event Study (Polars + DuckDB)",
+      "url": "https://github.com/Chihche-Liew/Event-Study-Polars",
+      "summary": "High-performance event study framework replicating the WRDS Python app, enhanced with Polars and DuckDB for ~240× acceleration.",
+      "features": ["Abnormal return models: market-adjusted, CAPM, FF3, Carhart4", "Supports CAR, BHAR, abret with flexible event windows", "Efficient processing of large-scale samples"]
+    },
+    {
+      "name": "GPT-Disclosure Analyzer",
+      "url": "https://github.com/Chihche-Liew/GPT-Disclosure-Analyzer",
+      "summary": "Modular pipeline for analyzing SEC filings using OpenAI GPT models via keyword and item extraction.",
+      "features": ["Automatic extraction of selected SEC items (e.g., Item 1, 7 of 10-K)", "Custom keyword filtering (unigrams and bigrams)", "Batch annotation via OpenAI Chat API"]
+    },
+    {
+      "name": "Image-Text Inference with LLaVA",
+      "url": "https://github.com/Chihche-Liew/Image-Text-Inference-LLaVA",
+      "summary": "Multimodal inference tool using LLaVA v1.5 for interpreting image + prompt input.",
+      "features": ["Supports remote and local image input", "Runs efficiently on GPU with float16", "Returns vision-language model responses"]
+    },
+    {
+      "name": "RavenPack News Processor",
+      "url": "https://github.com/Chihche-Liew/RavenPack-News-Processor",
+      "summary": "Pipeline for processing RavenPack news event data with keyword filtering, accelerated by Polars and DuckDB.",
+      "features": ["Supports unigram and bigram keyword filtering", "Polars + DuckDB for high performance", "Outputs .parquet files with compression"]
+    },
+    {
+      "name": "FF Industry Parser",
+      "url": "https://github.com/Chihche-Liew/FF-Industry-Parser",
+      "summary": "Lightweight parser for mapping SIC codes to Fama-French industry categories.",
+      "features": ["Parses 49-industry (or 12) structure", "No external dependencies (pure re module)"]
+    },
+    {
+      "name": "Replication of Donelson et al. (2011, TAR)",
+      "url": "https://github.com/Chihche-Liew/Changes-over-Time-Replication-and-Extension",
+      "summary": "Replicates and extends Donelson et al. (2011) using Compustat data, validated on 1967–2005 and extended to 2023.",
+      "features": ["Key financial ratios and rolling volatility metrics", "Replicates Table 1 and Table 2", "Extends analysis to 2006–2023"]
+    },
+    {
+      "name": "Replication of Daniel et al. (1997, JF)",
+      "url": "https://github.com/Chihche-Liew/DGTW-Portfolio",
+      "summary": "Constructs 125 characteristic-sorted portfolios (5×5×5) using size, book-to-market, and momentum quintiles.",
+      "features": ["NYSE breakpoints for size, BM, and momentum quintiles", "12-2 month momentum window with minimum 8 valid observations", "Multiple share class handling"]
+    },
+    {
+      "name": "Replication of Call et al. (2023, RAST)",
+      "url": "https://github.com/Chihche-Liew/Tone-Analyst-Manager",
+      "summary": "Replicates tone calculation from earnings call transcripts using the Loughran-McDonald sentiment dictionary.",
+      "features": ["Separates manager (type 4) and analyst (type 3) statements", "Loughran-McDonald sentiment scoring", "Outputs tone_manager and tone_analyst measures"]
+    }
+  ],
+  "r": [
+    {
+      "name": "Replication of García et al. (2023, JFE)",
+      "url": "https://github.com/Chihche-Liew/The-Color-of-Finance-Words-Replication-and-Optimization",
+      "summary": "Joint work with Miao Liu and Yang Cao at Boston College. Replicates and extends García et al. (2023) using updated conversation datasets and customized NLP models.",
+      "features": ["Full replication of original variable construction pipeline", "FineTuneBert.py: fine-tunes Google BERT for earnings call prediction", "BertShap.py: interprets BERT attention via Shapley values"]
+    }
+  ],
+  "sas": [
+    {
+      "name": "High-Frequency Event Study TAQ",
+      "url": "https://github.com/Chihche-Liew/High-Frequency-Event-Study-TAQ",
+      "summary": "Extracts short-window trading activity and quote information around event timestamps for market microstructure analysis.",
+      "features": ["Customizable event input with your own event dataset", "Automatically detects and matches TAQ data files by date"]
+    }
+  ]
+}

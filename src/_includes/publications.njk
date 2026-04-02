@@ -1,0 +1,100 @@
+<section id="research" class="section-alt">
+  <div class="container">
+    <h2 class="section-title">Research</h2>
+
+    <h3 class="section-title section-title-sub">Working Papers</h3>
+    <div class="pub-list">
+      {% for pub in publications %}
+      {% if pub.category === "working" %}
+      <article class="pub-card" id="{{ pub.id }}">
+        <div class="pub-year">{{ pub.year }}</div>
+        <div class="pub-body">
+          <h3 class="pub-title">{{ pub.title }}</h3>
+          {% if pub.coauthors %}
+          <p class="pub-authors">with {{ pub.coauthors | safe }}</p>
+          {% endif %}
+          <div class="pub-status-row">
+            <span class="badge badge-review">{{ pub.status }}</span>
+            {% if pub.agentLink %}
+            <a href="{{ pub.agentLink }}" class="badge badge-agent">{{ pub.agentLabel }}</a>
+            {% endif %}
+          </div>
+          <div class="pub-abstract-wrap">
+            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-{{ pub.id }}">
+              Abstract <span class="toggle-icon">+</span>
+            </button>
+            <p class="pub-abstract" id="abstract-{{ pub.id }}" hidden>{{ pub.abstract }}</p>
+          </div>
+          {% if pub.pdf %}
+          <div class="pub-links">
+            <a href="{{ pub.pdf }}" class="pub-link" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              {{ pub.pdfLabel }}
+            </a>
+          </div>
+          {% else %}
+          <div class="pub-links">
+            <span class="pub-link-muted">{{ pub.pdfLabel }}</span>
+          </div>
+          {% endif %}
+        </div>
+      </article>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <h3 class="section-title section-title-sub">Conference Papers</h3>
+    <div class="pub-list">
+      {% for pub in publications %}
+      {% if pub.category === "conference" %}
+      <article class="pub-card" id="{{ pub.id }}">
+        <div class="pub-year">{{ pub.year }}</div>
+        <div class="pub-body">
+          <h3 class="pub-title">{{ pub.title }}</h3>
+          {% if pub.coauthors %}
+          <p class="pub-authors">with {{ pub.coauthors | safe }}</p>
+          {% endif %}
+          <div class="pub-status-row">
+            <span class="badge badge-review">{{ pub.status }}</span>
+          </div>
+          <div class="pub-abstract-wrap">
+            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-{{ pub.id }}">
+              Abstract <span class="toggle-icon">+</span>
+            </button>
+            <p class="pub-abstract" id="abstract-{{ pub.id }}" hidden>{{ pub.abstract }}</p>
+          </div>
+          {% if pub.pdf %}
+          <div class="pub-links">
+            <a href="{{ pub.pdf }}" class="pub-link" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              {{ pub.pdfLabel }}
+            </a>
+          </div>
+          {% else %}
+          <div class="pub-links">
+            <span class="pub-link-muted">{{ pub.pdfLabel }}</span>
+          </div>
+          {% endif %}
+        </div>
+      </article>
+      {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="wip-block">
+      <h3 class="section-title section-title-sub">Works in Progress</h3>
+      <ul class="wip-list">
+        {% for item in wip %}
+        <li class="wip-item">
+          <span class="wip-title">{{ item.title }}</span>
+          {% if item.coauthors %}
+          <span class="wip-authors">with {{ item.coauthors | safe }}</span>
+          {% else %}
+          <span class="wip-authors wip-sole">Sole-authored</span>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

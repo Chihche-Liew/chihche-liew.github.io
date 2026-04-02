@@ -1,0 +1,85 @@
+@use 'variables' as *;
+
+footer {
+  background: $columbia-navy;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 3rem 0 0;
+  position: relative;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+.footer-name {
+  font-family: $font-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $white;
+  margin-bottom: 0.25rem;
+}
+
+.footer-location {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.5rem;
+}
+
+.footer-email {
+  font-size: 0.875rem;
+  color: $columbia-blue;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $columbia-mid;
+  }
+}
+
+.footer-right {
+  text-align: right;
+
+  @media (max-width: 640px) {
+    text-align: left;
+  }
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+  justify-content: flex-end;
+
+  @media (max-width: 640px) {
+    justify-content: flex-start;
+  }
+
+  a {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $columbia-blue;
+    }
+  }
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.columbia-bar {
+  height: 4px;
+  background: linear-gradient(to right, $columbia-blue, $columbia-navy, $columbia-blue);
+  opacity: 0.6;
+}

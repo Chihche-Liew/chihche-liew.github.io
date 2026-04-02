@@ -1,0 +1,139 @@
+@use 'variables' as *;
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $nav-height;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid $gray-200;
+  z-index: 1000;
+  transition: box-shadow $transition;
+
+  &.scrolled {
+    box-shadow: $shadow-sm;
+  }
+}
+
+.nav-inner {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  font-family: $font-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $columbia-navy;
+  letter-spacing: -0.02em;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $columbia-blue;
+    transition: width $transition;
+  }
+
+  &:hover {
+    color: $columbia-navy;
+    &::after { width: 100%; }
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  li a {
+    display: inline-block;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $text-secondary;
+    border-radius: $radius-sm;
+    transition: color $transition-fast, background $transition-fast;
+    letter-spacing: 0.01em;
+
+    &:hover,
+    &.active {
+      color: $columbia-navy;
+      background: $columbia-light;
+    }
+  }
+
+  .nav-contact {
+    margin-left: 0.5rem;
+    padding: 0.4rem 1rem;
+    color: $columbia-navy;
+    border: 1.5px solid $columbia-navy;
+    border-radius: $radius-sm;
+
+    &:hover {
+      background: $columbia-navy;
+      color: $white;
+    }
+  }
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+
+  span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: $text-primary;
+    border-radius: 2px;
+    transition: $transition;
+  }
+
+  &.open {
+    span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    span:nth-child(2) { opacity: 0; }
+    span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: $nav-height;
+    left: 0;
+    right: 0;
+    background: $white;
+    border-bottom: 1px solid $gray-200;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.25rem;
+
+    &.open {
+      display: flex;
+    }
+
+    li { width: 100%; }
+    li a { width: 100%; display: block; }
+    .nav-contact { margin-left: 0; text-align: center; }
+  }
+}

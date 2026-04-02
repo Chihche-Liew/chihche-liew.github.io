@@ -1,0 +1,285 @@
+@use 'variables' as *;
+
+.agent-section {
+  min-height: calc(100vh - #{$nav-height});
+  padding-top: calc(#{$nav-height} + 3rem);
+}
+
+.agent-card {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2.5rem;
+  align-items: start;
+  background: $white;
+  border: 1px solid $gray-200;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-md;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.agent-image-wrap {
+  background: $gray-50;
+  border-right: 1px solid $gray-200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+  padding: 1.5rem;
+  cursor: zoom-in;
+
+  @media (max-width: 768px) {
+    border-right: none;
+    border-bottom: 1px solid $gray-200;
+    min-height: 240px;
+  }
+}
+
+.agent-image {
+  width: 100%;
+  height: auto;
+  border-radius: $radius;
+  box-shadow: $shadow-sm;
+  transition: opacity $transition-fast;
+
+  &:hover {
+    opacity: 0.92;
+  }
+}
+
+.agent-body {
+  padding: 2rem 2rem 2rem 0;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+}
+
+// ---- Lightbox ----
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+
+  &.open {
+    display: flex;
+  }
+
+  img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: $radius;
+    box-shadow: $shadow-lg;
+  }
+}
+
+.agent-header {
+  margin-bottom: 1rem;
+}
+
+.agent-name {
+  font-family: $font-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: $columbia-navy;
+  margin-bottom: 0.2rem;
+}
+
+.agent-type {
+  font-size: 0.9rem;
+  color: $columbia-blue;
+  font-weight: 500;
+}
+
+.agent-desc {
+  font-size: 0.95rem;
+  color: $text-secondary;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+// ---- Agent tabs ----
+
+.agent-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid $gray-200;
+  margin-bottom: 1.5rem;
+}
+
+.agent-tab {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $text-muted;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  transition: $transition;
+
+  &.active,
+  &:hover {
+    color: $columbia-navy;
+  }
+
+  &.active {
+    border-bottom-color: $columbia-blue;
+    color: $columbia-navy;
+  }
+}
+
+.agent-panel {
+  &.hidden {
+    display: none;
+  }
+}
+
+// ---- Features list ----
+
+.agent-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+
+  li {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: $text-muted;
+    margin-top: 0.15rem;
+    line-height: 1.6;
+  }
+
+  strong {
+    font-size: 0.9rem;
+    color: $text-primary;
+  }
+}
+
+.feature-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $columbia-light;
+  border-radius: $radius-sm;
+  color: $columbia-navy;
+  margin-top: 1px;
+}
+
+// ---- Interfaces ----
+
+.interface-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.interface-card {
+  border: 1px solid $gray-200;
+  border-top: 3px solid $gray-200;
+  border-radius: $radius;
+  padding: 1rem;
+
+  h4 {
+    font-family: $font-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $text-primary;
+    margin: 0.4rem 0 0.35rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: $text-muted;
+    line-height: 1.6;
+  }
+
+  &.interface-card-mid {
+    border-top-color: $columbia-blue;
+  }
+
+  &.interface-card-high {
+    border-top-color: $columbia-navy;
+  }
+}
+
+.interface-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  background: $gray-100;
+  color: $gray-500;
+
+  &.interface-badge-mid {
+    background: $columbia-light;
+    color: $columbia-blue;
+  }
+
+  &.interface-badge-high {
+    background: rgba($columbia-navy, 0.08);
+    color: $columbia-navy;
+  }
+}
+
+// ---- Research tab ----
+
+.agent-paper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.agent-paper-title {
+  font-family: $font-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $text-primary;
+  line-height: 1.4;
+}
+
+.agent-paper-authors {
+  font-size: 0.875rem;
+  color: $text-muted;
+}
+
+.agent-paper-abstract {
+  font-size: 0.875rem;
+  color: $text-secondary;
+  line-height: 1.7;
+  margin-top: 0.25rem;
+  border-left: 2px solid $gray-200;
+  padding-left: 0.75rem;
+}
+
+// ---- Actions ----
+
+.agent-actions {
+  margin-top: 1.75rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
