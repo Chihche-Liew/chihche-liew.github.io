@@ -5,7 +5,7 @@
     "coauthors": "Huan Liu, <a href=\"https://miao-liu.com\" target=\"_blank\" rel=\"noopener\">Miao Liu</a> and <a href=\"https://www.danqingmei.com/\" target=\"_blank\" rel=\"noopener\">Danqing Mei</a>",
     "category": "working",
     "year": "2026",
-    "status": "Working Paper",
+    "status": "Updated Version in Preparation",
     "abstract": "We study whether an AI research agent can autonomously execute the hypothesis discovery loop in empirical asset pricing. We place a large language model inside a human-designed research environment comprising a symbolic language of interpretable accounting formulas, an automated validation layer, and a fixed empirical evaluation pipeline. The agent searches over interactions between economic themes such as profitability, investment, valuation, and quality, and updates its proposals over successive generations, where each generation is a new round of proposal, testing, and revision based on standardized empirical feedback. Across eight theme pairs and seven generations, the system proposes and evaluates 280 candidate signals on a microcap-excluded universe; 159 clear a conventional significance screen in the predicted direction, and 38 survive multivariate horse races designed to isolate signals with independent predictive content. We then subject these survivors to a full battery of modern asset pricing tests, including multiple testing corrections, multi-model factor spanning, and novelty tests against 209 published anomalies, and identify a small set that carries genuinely incremental information and survives the strictest filters. The paper introduces a transparent architecture for AI-guided hypothesis discovery in finance in which human researchers design the laboratory environment and the AI research agent autonomously carries out the discovery loop.",
     "pdf": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569258",
     "pdfLabel": "SSRN"
@@ -37,7 +37,7 @@
   {
     "id": "pub5",
     "title": "Controllable Traffic Simulation through LLM-Guided Hierarchical Chain-of-Thought Reasoning",
-    "coauthors": "Zhiyuan Liu, Leheng Li, Yuning Wang, Haotian Lin, Lei He and Jianqiang Wang",
+    "coauthors": "<a href=\"https://scholar.google.com/citations?user=3y2SXWMAAAAJ&hl=en\" target=\"_blank\" rel=\"noopener\">Zhiyuan Liu</a>, Leheng Li, Yuning Wang, Haotian Lin, Lei He and Jianqiang Wang",
     "category": "conference",
     "year": "2024",
     "status": "Accepted by IROS 2025",

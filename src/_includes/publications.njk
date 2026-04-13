@@ -15,9 +15,6 @@
           {% endif %}
           <div class="pub-status-row">
             <span class="badge badge-review">{{ pub.status }}</span>
-            {% if pub.agentLink %}
-            <a href="{{ pub.agentLink }}" class="badge badge-agent">{{ pub.agentLabel }}</a>
-            {% endif %}
           </div>
           <div class="pub-abstract-wrap">
             <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-{{ pub.id }}">
@@ -25,18 +22,22 @@
             </button>
             <p class="pub-abstract" id="abstract-{{ pub.id }}" hidden>{{ pub.abstract }}</p>
           </div>
-          {% if pub.pdf %}
           <div class="pub-links">
+            {% if pub.pdf %}
             <a href="{{ pub.pdf }}" class="pub-link" target="_blank" rel="noopener">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               {{ pub.pdfLabel }}
             </a>
-          </div>
-          {% else %}
-          <div class="pub-links">
+            {% else %}
             <span class="pub-link-muted">{{ pub.pdfLabel }}</span>
+            {% endif %}
+            {% if pub.agentLink %}
+            <a href="{{ pub.agentLink }}" class="pub-link" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              {{ pub.agentLabel }}
+            </a>
+            {% endif %}
           </div>
-          {% endif %}
         </div>
       </article>
       {% endif %}
