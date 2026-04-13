@@ -110,26 +110,3 @@ toolkitTabs.forEach((tab) => {
   });
 });
 
-// =====================
-// Scroll fade-in animations
-// =====================
-const fadeEls = document.querySelectorAll(
-  '.pub-card, .timeline-item, .toolkit-card, .teaching-card, .wip-item'
-);
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('fade-up', 'visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.08 }
-);
-
-fadeEls.forEach((el) => {
-  el.classList.add('fade-up');
-  observer.observe(el);
-});

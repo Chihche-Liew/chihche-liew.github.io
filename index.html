@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles/main.css">
 
 </head>
@@ -25,9 +25,9 @@
     </button>
     <ul class="nav-links" id="navLinks" role="list">
       <li><a href="#research" data-section="research">Research</a></li>
-      <li><a href="/val-agent/">AlphaVal Agent</a></li>
       <li><a href="#teaching" data-section="teaching">Teaching</a></li>
       <li><a href="#toolkits" data-section="toolkits">Toolkits</a></li>
+      <li><a href="/val-agent/">AlphaVal Agent</a></li>
     </ul>
   </div>
 </nav>
@@ -94,36 +94,69 @@
       <article class="pub-card" id="pub1">
         <div class="pub-year">2026</div>
         <div class="pub-body">
-          <h3 class="pub-title">Human-AI Collaboration in Corporate Valuation: Experimental Evidence with a Valuation AI Agent</h3>
+          <h3 class="pub-title">Can AI Do Financial Research? LLM-Guided Hypothesis Discovery in Asset Pricing</h3>
           
           <p class="pub-authors">with Huan Liu, <a href="https://miao-liu.com" target="_blank" rel="noopener">Miao Liu</a> and <a href="https://www.danqingmei.com/" target="_blank" rel="noopener">Danqing Mei</a></p>
           
           <div class="pub-status-row">
-            <span class="badge badge-review">Under Review at Journal of Accounting and Economics</span>
-            
-            <a href="/val-agent/" class="badge badge-agent">AlphaVal Agent</a>
-            
+            <span class="badge badge-review">Updated Version in Preparation</span>
           </div>
           <div class="pub-abstract-wrap">
             <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-pub1">
               Abstract <span class="toggle-icon">+</span>
             </button>
-            <p class="pub-abstract" id="abstract-pub1" hidden>In an era where AI can deliver increasingly sophisticated hard information, we study how AI can facilitate human soft information production and make human-AI collaboration in corporate valuation more productive. We develop a retrieval-augmented AI agent that reads financial filings and produces interactive dashboards and valuation analytics. We embed an experiment in an advanced business course in which students use the AI agent to value real firms, varying the amount of AI-supplied hard information across three interfaces: bare retrieval (Low-Hard), dashboards that summarize financials but do not propose a valuation (Medium-Hard), and dashboards plus AI-generated valuations (High-Hard). Using full chat logs and valuation memos from participants, we construct rich measures of soft information and relate them to ex ante financial statement analysis (FSA) knowledge. We find a non-monotonic effect of AI-supplied hard information: relative to Low-Hard, dashboards in Medium-Hard substantially increase soft information production, whereas adding AI valuations in High-Hard yields much smaller incremental gains and appears to induce anchoring. FSA knowledge amplifies the benefits of dashboards and mitigates, but does not eliminate, crowding out in High-Hard. Our results clarify when AI acts as a complementary hard-information engine versus a substitute for human soft information production, and offer guidance for the design of valuation tools and curricula in the LLM era.</p>
+            <p class="pub-abstract" id="abstract-pub1" hidden>We study whether an AI research agent can autonomously execute the hypothesis discovery loop in empirical asset pricing. We place a large language model inside a human-designed research environment comprising a symbolic language of interpretable accounting formulas, an automated validation layer, and a fixed empirical evaluation pipeline. The agent searches over interactions between economic themes such as profitability, investment, valuation, and quality, and updates its proposals over successive generations, where each generation is a new round of proposal, testing, and revision based on standardized empirical feedback. Across eight theme pairs and seven generations, the system proposes and evaluates 280 candidate signals on a microcap-excluded universe; 159 clear a conventional significance screen in the predicted direction, and 38 survive multivariate horse races designed to isolate signals with independent predictive content. We then subject these survivors to a full battery of modern asset pricing tests, including multiple testing corrections, multi-model factor spanning, and novelty tests against 209 published anomalies, and identify a small set that carries genuinely incremental information and survives the strictest filters. The paper introduces a transparent architecture for AI-guided hypothesis discovery in finance in which human researchers design the laboratory environment and the AI research agent autonomously carries out the discovery loop.</p>
           </div>
-          
           <div class="pub-links">
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6485198" class="pub-link" target="_blank" rel="noopener">
+            
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569258" class="pub-link" target="_blank" rel="noopener">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               SSRN
             </a>
+            
+            
           </div>
-          
         </div>
       </article>
       
       
       
       <article class="pub-card" id="pub2">
+        <div class="pub-year">2026</div>
+        <div class="pub-body">
+          <h3 class="pub-title">Human-AI Collaboration in Corporate Valuation: Experimental Evidence with a Valuation AI Agent</h3>
+          
+          <p class="pub-authors">with Huan Liu, <a href="https://miao-liu.com" target="_blank" rel="noopener">Miao Liu</a> and <a href="https://www.danqingmei.com/" target="_blank" rel="noopener">Danqing Mei</a></p>
+          
+          <div class="pub-status-row">
+            <span class="badge badge-review">Under Review at Journal of Accounting and Economics</span>
+          </div>
+          <div class="pub-abstract-wrap">
+            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-pub2">
+              Abstract <span class="toggle-icon">+</span>
+            </button>
+            <p class="pub-abstract" id="abstract-pub2" hidden>In an era where AI can deliver increasingly sophisticated hard information, we study how AI can facilitate human soft information production and make human-AI collaboration in corporate valuation more productive. We develop a retrieval-augmented AI agent that reads financial filings and produces interactive dashboards and valuation analytics. We embed an experiment in an advanced business course in which students use the AI agent to value real firms, varying the amount of AI-supplied hard information across three interfaces: bare retrieval (Low-Hard), dashboards that summarize financials but do not propose a valuation (Medium-Hard), and dashboards plus AI-generated valuations (High-Hard). Using full chat logs and valuation memos from participants, we construct rich measures of soft information and relate them to ex ante financial statement analysis (FSA) knowledge. We find a non-monotonic effect of AI-supplied hard information: relative to Low-Hard, dashboards in Medium-Hard substantially increase soft information production, whereas adding AI valuations in High-Hard yields much smaller incremental gains and appears to induce anchoring. FSA knowledge amplifies the benefits of dashboards and mitigates, but does not eliminate, crowding out in High-Hard. Our results clarify when AI acts as a complementary hard-information engine versus a substitute for human soft information production, and offer guidance for the design of valuation tools and curricula in the LLM era.</p>
+          </div>
+          <div class="pub-links">
+            
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6485198" class="pub-link" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              SSRN
+            </a>
+            
+            
+            <a href="/val-agent/" class="pub-link" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              AlphaVal Agent
+            </a>
+            
+          </div>
+        </div>
+      </article>
+      
+      
+      
+      <article class="pub-card" id="pub3">
         <div class="pub-year">2025</div>
         <div class="pub-body">
           <h3 class="pub-title">When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Presentations</h3>
@@ -132,19 +165,19 @@
           
           <div class="pub-status-row">
             <span class="badge badge-review">Under Review at Journal of Accounting Research</span>
-            
           </div>
           <div class="pub-abstract-wrap">
-            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-pub2">
+            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-pub3">
               Abstract <span class="toggle-icon">+</span>
             </button>
-            <p class="pub-abstract" id="abstract-pub2" hidden>Visuals have become a core language of corporate storytelling in earnings communications, yet their capital-market consequences remain poorly understood. Using 432,003 slides and 175,231 charts from 17,546 earnings-call decks between 2003 and 2023, we study how visual disclosure shapes investor uncertainty and price formation. We first show that more informative visuals reduce uncertainty: firms that use more chart-containing slides exhibit significantly lower option-implied volatility around earnings calls. This effect is stronger for firms that are harder to value ex ante—those with more segments, greater intangible investment, and higher pre-call idiosyncratic volatility or analyst dispersion. Second, using transformer-based computer-vision models, we detect five bias-prone chart features—missing and truncated Y-axes, dual Y-axes, 3-D effects, and omitted data labels—and show that calls with more such misleading visuals earn higher short-window abnormal returns that reverse over the subsequent 30 trading days, suggesting temporary misperception. Misleading visuals are accompanied by verbal narration that is more positive in tone and less quantitatively detailed, and managers strategically delay posting slide decks, indicating a deliberate disclosure policy rather than random error.</p>
+            <p class="pub-abstract" id="abstract-pub3" hidden>Visuals have become a core language of corporate storytelling in earnings communications, yet their capital-market consequences remain poorly understood. Using 432,003 slides and 175,231 charts from 17,546 earnings-call decks between 2003 and 2023, we study how visual disclosure shapes investor uncertainty and price formation. We first show that more informative visuals reduce uncertainty: firms that use more chart-containing slides exhibit significantly lower option-implied volatility around earnings calls. This effect is stronger for firms that are harder to value ex ante—those with more segments, greater intangible investment, and higher pre-call idiosyncratic volatility or analyst dispersion. Second, using transformer-based computer-vision models, we detect five bias-prone chart features—missing and truncated Y-axes, dual Y-axes, 3-D effects, and omitted data labels—and show that calls with more such misleading visuals earn higher short-window abnormal returns that reverse over the subsequent 30 trading days, suggesting temporary misperception. Misleading visuals are accompanied by verbal narration that is more positive in tone and less quantitatively detailed, and managers strategically delay posting slide decks, indicating a deliberate disclosure policy rather than random error.</p>
           </div>
-          
           <div class="pub-links">
+            
             <span class="pub-link-muted">Coming Soon</span>
+            
+            
           </div>
-          
         </div>
       </article>
       
@@ -161,21 +194,23 @@
       
       
       
-      <article class="pub-card" id="pub3">
+      
+      
+      <article class="pub-card" id="pub5">
         <div class="pub-year">2024</div>
         <div class="pub-body">
           <h3 class="pub-title">Controllable Traffic Simulation through LLM-Guided Hierarchical Chain-of-Thought Reasoning</h3>
           
-          <p class="pub-authors">with Zhiyuan Liu, Leheng Li, Yuning Wang, Haotian Lin, Lei He and Jianqiang Wang</p>
+          <p class="pub-authors">with <a href="https://scholar.google.com/citations?user=3y2SXWMAAAAJ&hl=en" target="_blank" rel="noopener">Zhiyuan Liu</a>, Leheng Li, Yuning Wang, Haotian Lin, Lei He and Jianqiang Wang</p>
           
           <div class="pub-status-row">
             <span class="badge badge-review">Accepted by IROS 2025</span>
           </div>
           <div class="pub-abstract-wrap">
-            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-pub3">
+            <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-pub5">
               Abstract <span class="toggle-icon">+</span>
             </button>
-            <p class="pub-abstract" id="abstract-pub3" hidden>Evaluating autonomous driving systems in complex and diverse traffic scenarios through controllable simulation is essential to ensure their safety and reliability. However, existing traffic simulation methods face challenges in their controllability. To address this, this paper proposes a novel diffusion-based and LLM-enhanced traffic simulation framework. Our approach incorporates a unique chain-of-thought (CoT) mechanism, which systematically examines the hierarchical structure of traffic elements and guides LLMs to thoroughly analyze traffic scenario descriptions step by step, enhancing their understanding of complex situations. Furthermore, we propose a Frenet-frame-based cost function framework that provides LLMs with geometrically meaningful quantities, improving their grasp of spatial relationships in a scenario and enabling more accurate cost function generation.</p>
+            <p class="pub-abstract" id="abstract-pub5" hidden>Evaluating autonomous driving systems in complex and diverse traffic scenarios through controllable simulation is essential to ensure their safety and reliability. However, existing traffic simulation methods face challenges in their controllability. To address this, this paper proposes a novel diffusion-based and LLM-enhanced traffic simulation framework. Our approach incorporates a unique chain-of-thought (CoT) mechanism, which systematically examines the hierarchical structure of traffic elements and guides LLMs to thoroughly analyze traffic scenario descriptions step by step, enhancing their understanding of complex situations. Furthermore, we propose a Frenet-frame-based cost function framework that provides LLMs with geometrically meaningful quantities, improving their grasp of spatial relationships in a scenario and enabling more accurate cost function generation.</p>
           </div>
           
           <div class="pub-links">
@@ -497,6 +532,13 @@
 </section>
 
   </main>
+  <footer id="contact">
+  <div class="footer-simple">
+    <p class="footer-line">© Zhizhe Liu · Columbia Business School</p>
+    <p class="footer-line footer-updated"><time datetime="2026-04">Last updated April 2026</time></p>
+  </div>
+</footer>
+
 <script src="/js/main.js" defer></script>
 </body>
 </html>
