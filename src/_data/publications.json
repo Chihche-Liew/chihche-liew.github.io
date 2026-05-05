@@ -29,7 +29,7 @@
     "coauthors": "<a href=\"https://www.yangcao.me/\" target=\"_blank\" rel=\"noopener\">Yang Cao</a> and <a href=\"https://miao-liu.com\" target=\"_blank\" rel=\"noopener\">Miao Liu</a>",
     "category": "working",
     "year": "2025",
-    "status": "Under Review at Journal of Accounting Research",
+    "status": "Revising for First Resubmit to Journal of Accounting Research",
     "abstract": "Visuals have become a core language of corporate storytelling in earnings communications, yet their capital-market consequences remain poorly understood. Using 432,003 slides and 175,231 charts from 17,546 earnings-call decks between 2003 and 2023, we study how visual disclosure shapes investor uncertainty and price formation. We first show that more informative visuals reduce uncertainty: firms that use more chart-containing slides exhibit significantly lower option-implied volatility around earnings calls. This effect is stronger for firms that are harder to value ex ante—those with more segments, greater intangible investment, and higher pre-call idiosyncratic volatility or analyst dispersion. Second, using transformer-based computer-vision models, we detect five bias-prone chart features—missing and truncated Y-axes, dual Y-axes, 3-D effects, and omitted data labels—and show that calls with more such misleading visuals earn higher short-window abnormal returns that reverse over the subsequent 30 trading days, suggesting temporary misperception. Misleading visuals are accompanied by verbal narration that is more positive in tone and less quantitatively detailed, and managers strategically delay posting slide decks, indicating a deliberate disclosure policy rather than random error.",
     "pdf": null,
     "pdfLabel": "Coming Soon"
