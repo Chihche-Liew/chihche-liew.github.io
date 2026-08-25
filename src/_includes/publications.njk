@@ -3,7 +3,7 @@
     <h2 class="section-title">Research</h2>
     <p class="research-interest">How is GenAI transforming information generation, processing, and dissemination in capital markets?</p>
 
-    <h3 class="section-title section-title-sub">Working Papers</h3>
+    <h3 class="section-title section-title-sub">Selected Working Papers</h3>
     <div class="pub-list">
       {% for pub in publications %}
       {% if pub.category === "working" %}
@@ -15,14 +15,16 @@
           <p class="pub-authors">with {{ pub.coauthors | safe }}</p>
           {% endif %}
           <div class="pub-status-row">
-            <span class="badge badge-review">{{ pub.status }}</span>
+            <span class="badge badge-review">{{ pub.status | safe }}</span>
           </div>
+          {% if pub.abstract %}
           <div class="pub-abstract-wrap">
             <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-{{ pub.id }}">
               Abstract <span class="toggle-icon">+</span>
             </button>
             <p class="pub-abstract" id="abstract-{{ pub.id }}" hidden>{{ pub.abstract }}</p>
           </div>
+          {% endif %}
           <div class="pub-links">
             {% if pub.pdf %}
             <a href="{{ pub.pdf }}" class="pub-link" target="_blank" rel="noopener">
@@ -57,14 +59,16 @@
           <p class="pub-authors">with {{ pub.coauthors | safe }}</p>
           {% endif %}
           <div class="pub-status-row">
-            <span class="badge badge-review">{{ pub.status }}</span>
+            <span class="badge badge-review">{{ pub.status | safe }}</span>
           </div>
+          {% if pub.abstract %}
           <div class="pub-abstract-wrap">
             <button class="abstract-toggle" aria-expanded="false" aria-controls="abstract-{{ pub.id }}">
               Abstract <span class="toggle-icon">+</span>
             </button>
             <p class="pub-abstract" id="abstract-{{ pub.id }}" hidden>{{ pub.abstract }}</p>
           </div>
+          {% endif %}
           {% if pub.pdf %}
           <div class="pub-links">
             <a href="{{ pub.pdf }}" class="pub-link" target="_blank" rel="noopener">

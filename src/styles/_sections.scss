@@ -136,6 +136,11 @@
     font-weight: 400;
     font-style: italic;
     color: $text-secondary;
+
+    strong {
+      font-weight: 600;
+      color: $columbia-navy;
+    }
   }
 
   &.badge-agent {

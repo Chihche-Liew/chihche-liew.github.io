@@ -1,7 +1,7 @@
 <section id="toolkits" class="section-alt">
   <div class="container">
     <h2 class="section-title">Research Toolkits</h2>
-    <p class="section-desc">Open-source pipelines and replication packages for empirical accounting and finance research.</p>
+    <p class="section-desc">Open-source pipelines and replication packages for capital-market research.</p>
 
     <div class="toolkit-tabs" role="tablist">
       <button class="toolkit-tab active" role="tab" aria-selected="true" data-lang="python">
@@ -29,11 +29,6 @@
             </a>
           </div>
           <p class="toolkit-summary">{{ tool.summary }}</p>
-          <ul class="toolkit-features">
-            {% for feature in tool.features %}
-            <li>{{ feature }}</li>
-            {% endfor %}
-          </ul>
         </div>
         {% endfor %}
       </div>
