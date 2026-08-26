@@ -9,8 +9,16 @@
     "year": "2026",
     "status": "Preparing for Journal Submission",
     "abstract": "Large language models (LLMs) are increasingly deployed as AI analysts to process financial disclosures and support AI-assisted investment decisions. Yet such systems are usually evaluated by what they can retrieve, not whether retrieved information affects their judgments. We identify a retrieval–integration gap in long-context financial analysis. Holding focal-firm information fixed and varying only unrelated context from 2,000 to 128,000 tokens, we find that a risk disclosure’s influence on investment judgments falls to the experimental noise floor even as direct retrieval remains accurate. The pattern replicates across model families and judgment tasks and in experiments removing real disclosures from actual 10-K filings. More capable models postpone but do not eliminate the gap. Causal memory interventions show that compressed summaries and source-text lookup jointly transmit disclosures into judgments. Workflow architecture determines whether this transmission succeeds: chunk-and-summarize pipelines evict relevant information, whereas a targeted, structured restatement adjacent to the decision restores its influence. AI analyst performance is therefore jointly determined by model capability and workflow architecture. Retrieval-based evaluations can certify systems whose investment judgments ignore information they demonstrably retrieved.",
-    "pdf": "https://papers.ssrn.com/abstract=7349358",
-    "pdfLabel": "SSRN"
+    "links": [
+      {
+        "url": "https://arxiv.org/abs/2608.24842",
+        "label": "arXiv:2608.24842"
+      },
+      {
+        "url": "https://papers.ssrn.com/abstract=7349358",
+        "label": "SSRN"
+      }
+    ]
   },
   {
     "id": "pub2",
@@ -22,8 +30,12 @@
     "year": "2026",
     "status": "Preparing for Journal Submission",
     "abstract": "We study whether an AI research agent can autonomously execute the hypothesis discovery loop in empirical asset pricing. We place a large language model inside a human-designed research environment comprising a symbolic language of interpretable accounting formulas, an automated validation layer, and a fixed empirical evaluation pipeline. The agent searches over interactions between economic themes such as profitability, investment, valuation, and quality, and updates its proposals over successive generations, where each generation is a new round of proposal, testing, and revision based on standardized empirical feedback. Across eight theme pairs and seven generations, the system proposes and evaluates 280 candidate signals on a microcap-excluded universe; 159 clear a conventional significance screen in the predicted direction, and 38 survive multivariate horse races designed to isolate signals with independent predictive content. We then subject these survivors to a full battery of modern asset pricing tests, including multiple testing corrections, multi-model factor spanning, and novelty tests against 209 published anomalies, and identify a small set that carries genuinely incremental information and survives the strictest filters. The paper introduces a transparent architecture for AI-guided hypothesis discovery in finance in which human researchers design the laboratory environment and the AI research agent autonomously carries out the discovery loop.",
-    "pdf": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569258",
-    "pdfLabel": "SSRN"
+    "links": [
+      {
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6569258",
+        "label": "SSRN"
+      }
+    ]
   },
   {
     "id": "pub3",
@@ -37,8 +49,12 @@
     "agentLink": "/val-agent/",
     "agentLabel": "AlphaVal Agent",
     "abstract": "In an era where AI can deliver increasingly sophisticated hard information, we study how AI can facilitate human soft information production and make human-AI collaboration in corporate valuation more productive. We develop a retrieval-augmented AI agent that reads financial filings and produces interactive dashboards and valuation analytics. We embed an experiment in an advanced business course in which students use the AI agent to value real firms, varying the amount of AI-supplied hard information across three interfaces: bare retrieval (Low-Hard), dashboards that summarize financials but do not propose a valuation (Medium-Hard), and dashboards plus AI-generated valuations (High-Hard). Using full chat logs and valuation memos from participants, we construct rich measures of soft information and relate them to ex ante financial statement analysis (FSA) knowledge. We find a non-monotonic effect of AI-supplied hard information: relative to Low-Hard, dashboards in Medium-Hard substantially increase soft information production, whereas adding AI valuations in High-Hard yields much smaller incremental gains and appears to induce anchoring. FSA knowledge amplifies the benefits of dashboards and mitigates, but does not eliminate, crowding out in High-Hard. Our results clarify when AI acts as a complementary hard-information engine versus a substitute for human soft information production, and offer guidance for the design of valuation tools and curricula in the LLM era.",
-    "pdf": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6485198",
-    "pdfLabel": "SSRN"
+    "links": [
+      {
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6485198",
+        "label": "SSRN"
+      }
+    ]
   },
   {
     "id": "pub4",
@@ -50,8 +66,12 @@
     "year": "2025",
     "status": "Revise and Resubmit, <strong>Journal of Accounting Research</strong>",
     "abstract": "Visuals have become a core language of corporate storytelling in earnings communications, yet their capital-market consequences remain poorly understood. Using 432,003 slides and 175,231 charts from 17,546 earnings-call decks between 2003 and 2023, we study how visual disclosure shapes investor uncertainty and price formation. We first show that more informative visuals reduce uncertainty: firms that use more chart-containing slides exhibit significantly lower option-implied volatility around earnings calls. This effect is stronger for firms that are harder to value ex ante—those with more segments, greater intangible investment, and higher pre-call idiosyncratic volatility or analyst dispersion. Second, using transformer-based computer-vision models, we detect five bias-prone chart features—missing and truncated Y-axes, dual Y-axes, 3-D effects, and omitted data labels—and show that calls with more such misleading visuals earn higher short-window abnormal returns that reverse over the subsequent 30 trading days, suggesting temporary misperception. Misleading visuals are accompanied by verbal narration that is more positive in tone and less quantitatively detailed, and managers strategically delay posting slide decks, indicating a deliberate disclosure policy rather than random error.",
-    "pdf": null,
-    "pdfLabel": "Coming Soon"
+    "links": [
+      {
+        "url": null,
+        "label": "Coming Soon"
+      }
+    ]
   },
   {
     "id": "pub5",
@@ -61,7 +81,11 @@
     "year": "2024",
     "status": "Accepted by IROS 2025",
     "abstract": "Evaluating autonomous driving systems in complex and diverse traffic scenarios through controllable simulation is essential to ensure their safety and reliability. However, existing traffic simulation methods face challenges in their controllability. To address this, this paper proposes a novel diffusion-based and LLM-enhanced traffic simulation framework. Our approach incorporates a unique chain-of-thought (CoT) mechanism, which systematically examines the hierarchical structure of traffic elements and guides LLMs to thoroughly analyze traffic scenario descriptions step by step, enhancing their understanding of complex situations. Furthermore, we propose a Frenet-frame-based cost function framework that provides LLMs with geometrically meaningful quantities, improving their grasp of spatial relationships in a scenario and enabling more accurate cost function generation.",
-    "pdf": "https://arxiv.org/pdf/2409.15135",
-    "pdfLabel": "arXiv:2409.15135"
+    "links": [
+      {
+        "url": "https://arxiv.org/pdf/2409.15135",
+        "label": "arXiv:2409.15135"
+      }
+    ]
   }
 ]
