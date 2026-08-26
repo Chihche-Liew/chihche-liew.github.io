@@ -11,6 +11,9 @@
         <div class="pub-year">{{ pub.year }}</div>
         <div class="pub-body">
           <h3 class="pub-title">{{ pub.title }}</h3>
+          {% if pub.role %}
+          <p class="pub-framing"><span class="pub-role">{{ pub.role }}</span><span class="pub-hook">{{ pub.hook }}</span></p>
+          {% endif %}
           {% if pub.coauthors %}
           <p class="pub-authors">with {{ pub.coauthors | safe }}</p>
           {% endif %}
@@ -55,6 +58,9 @@
         <div class="pub-year">{{ pub.year }}</div>
         <div class="pub-body">
           <h3 class="pub-title">{{ pub.title }}</h3>
+          {% if pub.role %}
+          <p class="pub-framing"><span class="pub-role">{{ pub.role }}</span><span class="pub-hook">{{ pub.hook }}</span></p>
+          {% endif %}
           {% if pub.coauthors %}
           <p class="pub-authors">with {{ pub.coauthors | safe }}</p>
           {% endif %}

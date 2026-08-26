@@ -1,7 +1,9 @@
 [
   {
-    "id": "pub4",
+    "id": "pub1",
     "title": "Reading Is Not Using: Retrieval, Judgment, and the Design of AI Financial Research Workflows",
+    "role": "AI as an information processor",
+    "hook": "When does information an AI can retrieve actually influence the judgment it produces?",
     "coauthors": "<a href=\"https://miao-liu.com\" target=\"_blank\" rel=\"noopener\">Miao Liu</a>",
     "category": "working",
     "year": "2026",
@@ -11,8 +13,10 @@
     "pdfLabel": "SSRN"
   },
   {
-    "id": "pub1",
+    "id": "pub2",
     "title": "Can AI Do Financial Research? LLM-Guided Hypothesis Discovery in Asset Pricing",
+    "role": "AI as an information producer",
+    "hook": "Can autonomous research agents generate and validate new capital-market knowledge?",
     "coauthors": "Huan Liu, <a href=\"https://miao-liu.com\" target=\"_blank\" rel=\"noopener\">Miao Liu</a> and <a href=\"https://www.danqingmei.com/\" target=\"_blank\" rel=\"noopener\">Danqing Mei</a>",
     "category": "working",
     "year": "2026",
@@ -22,8 +26,10 @@
     "pdfLabel": "SSRN"
   },
   {
-    "id": "pub2",
+    "id": "pub3",
     "title": "Human-AI Collaboration in Corporate Valuation: Experimental Evidence with a Valuation AI Agent",
+    "role": "AI as an information intermediary",
+    "hook": "How does AI-generated hard information reshape human analysis and valuation judgment?",
     "coauthors": "Huan Liu, <a href=\"https://miao-liu.com\" target=\"_blank\" rel=\"noopener\">Miao Liu</a> and <a href=\"https://www.danqingmei.com/\" target=\"_blank\" rel=\"noopener\">Danqing Mei</a>",
     "category": "working",
     "year": "2026",
@@ -35,8 +41,10 @@
     "pdfLabel": "SSRN"
   },
   {
-    "id": "pub3",
+    "id": "pub4",
     "title": "When Charts Clarify and Mislead: Visual Disclosure in Earnings Call Presentations",
+    "role": "AI as a measurement technology",
+    "hook": "We use multimodal AI to scale the study of how visual disclosures shape investor information processing and price formation.",
     "coauthors": "<a href=\"https://www.yangcao.me/\" target=\"_blank\" rel=\"noopener\">Yang Cao</a> and <a href=\"https://miao-liu.com\" target=\"_blank\" rel=\"noopener\">Miao Liu</a>",
     "category": "working",
     "year": "2025",
